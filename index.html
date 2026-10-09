@@ -30,6 +30,15 @@
     a.card strong { font-size: 1.02rem; }
     a.card span { color: var(--muted); font-size: 0.9rem; }
     a.card .tag { margin-top: auto; padding-top: 0.5rem; font-size: 0.78rem; color: var(--accent); font-weight: 600; }
+    div.card { display: flex; flex-direction: column; gap: 0.3rem; background: var(--white); border: 1px solid var(--rule); border-radius: 14px; padding: 1rem 1.1rem; }
+    div.card strong { font-size: 1.02rem; }
+    div.card span { color: var(--muted); font-size: 0.9rem; }
+    .acts { margin-top: auto; padding-top: 0.7rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; text-decoration: none; border: 1.5px solid var(--accent); color: var(--accent); }
+    .btn.dl { background: var(--accent); color: var(--white); }
+    .btn:hover { opacity: .85; }
+    ol.steps { margin: 0.6rem 0 0 1.2rem; font-size: 0.95rem; }
+    ol.steps li { margin: 0.25rem 0; }
     footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
   </style>
 </head>
@@ -37,19 +46,32 @@
   <div class="wrap">
     <header><img src="aidichtbij-logo.svg" alt="AI dichtbij"></header>
     <h1>Workshops Diabetes Fonds, ter <span class="wave">review</span></h1>
-    <p class="lead">Alles voor fase 2 op één plek: de slides van beide workshops, de online omgeving voor deelnemers en de voorbeelden uit stap 5.</p>
+    <p class="lead">Alles voor fase 2 op één plek: de online omgeving om online te zetten, en de slides van beide workshops. Bij elk onderdeel een knop om te bekijken en een om te downloaden.</p>
     <p class="note">Alleen voor AI dichtbij. De slides bevatten de sprekersnotities. Deelnemers krijgen alleen de online omgeving te zien, zonder workshop 2 tot na de eerste ronde.</p>
+
+    <h2>Online zetten</h2>
+    <div class="grid">
+      <div class="card"><strong>Online omgeving, workshop 1</strong><span>Zip met alles wat op de site moet: home, workshop 1, hulp, de slides zonder notities en het Copilot-filmpje. Workshop 2 zit er bewust niet in.</span>
+        <div class="acts"><a class="btn dl" href="downloads/online-omgeving-workshop-1.zip" download>Download zip (9 MB)</a><a class="btn" href="reader/index.html" target="_blank" rel="noopener">Bekijk</a></div></div>
+    </div>
+    <ol class="steps">
+      <li>Pak de zip uit. <code>index.html</code> is de startpagina.</li>
+      <li>Zet de hele map op Netlify (slepen naar het deploy-scherm werkt).</li>
+      <li>Stuur Guus de URL waar het komt te staan. Dan komt de QR-code op slide 07.</li>
+    </ol>
 
     <h2>Slides</h2>
     <div class="grid">
-      <a class="card" href="decks/workshop-1.html" target="_blank" rel="noopener"><strong>Workshop 1 · Ervaren wat AI kan</strong><span>30 slides, met sprekersnotities.</span><span class="tag">Deck</span></a>
-      <a class="card" href="decks/workshop-2.html" target="_blank" rel="noopener"><strong>Workshop 2 · Van kans naar experiment</strong><span>Met sprekersnotities.</span><span class="tag">Deck</span></a>
+      <div class="card"><strong>Workshop 1 · Ervaren wat AI kan</strong><span>30 slides, met sprekersnotities.</span>
+        <div class="acts"><a class="btn" href="decks/workshop-1.html" target="_blank" rel="noopener">Bekijk</a><a class="btn dl" href="decks/workshop-1.html" download="Workshop 1 Diabetes Fonds.html">Download</a></div></div>
+      <div class="card"><strong>Workshop 2 · Van kans naar experiment</strong><span>Met sprekersnotities.</span>
+        <div class="acts"><a class="btn" href="decks/workshop-2.html" target="_blank" rel="noopener">Bekijk</a><a class="btn dl" href="decks/workshop-2.html" download="Workshop 2 Diabetes Fonds.html">Download</a></div></div>
     </div>
 
-    <h2>Online omgeving voor deelnemers</h2>
+    <h2>Workshop 2 in de online omgeving</h2>
     <div class="grid">
-      <a class="card" href="reader/index.html" target="_blank" rel="noopener"><strong>Home</strong><span>Met het menu naar workshop 1 en hulp. Programma, data, spelregel en wat je vooraf regelt.</span><span class="tag">Reader</span></a>
-      <a class="card" href="reader/workshop-2.html" target="_blank" rel="noopener"><strong>Workshop 2</strong><span>Nog niet gelinkt vanuit de reader, staat er na de eerste ronde.</span><span class="tag">Reader</span></a>
+      <div class="card"><strong>Workshop 2</strong><span>Nog niet online voor deelnemers, komt er na de eerste ronde bij.</span>
+        <div class="acts"><a class="btn" href="reader/workshop-2.html" target="_blank" rel="noopener">Bekijk</a></div></div>
     </div>
 
     <footer>Stand 9 oktober 2026.</footer>
