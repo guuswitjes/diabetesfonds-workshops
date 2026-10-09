@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Workshop 1 · AI-workshops Diabetes Fonds</title>
+  <meta name="description" content="Workshop 1: ervaren wat AI kan. De stappen, de opdrachten en de opdracht voor tussendoor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="cobrand" href="index.html" aria-label="Naar de startpagina">
+      <img class="topbar-logo" src="aidichtbij-logo.svg" alt="AI dichtbij">
+      <span class="voor">voor</span>
+      <img class="df-logo" src="diabetesfonds-logo.svg" alt="Diabetes Fonds">
+    </a>
+    <span class="topbar-meta">AI-workshops · oktober en november 2026</span>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </header>
+
+  <nav class="sidebar" id="sidebar" aria-label="Inhoud">
+    <div class="nav-group" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="index.html"><span class="nav-num"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></span><span class="nav-text"><span class="nav-kicker">Start</span><span class="nav-title">Home</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-home" aria-label="Start: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-home" hidden>
+        <a class="nav-link sub" href="index.html#overzicht"><span class="sub-num"></span><span>Zo loopt het</span></a>
+        <a class="nav-link sub" href="index.html#voorbereiding"><span class="sub-num"></span><span>Voor je start</span></a>
+        <a class="nav-link sub" href="index.html#onderdelen"><span class="sub-num"></span><span>Waar vind je wat</span></a>
+      </div>
+    </div>
+    <div class="nav-group current" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="workshop-1.html" aria-current="page"><span class="nav-num">1</span><span class="nav-text"><span class="nav-kicker">Workshop 1</span><span class="nav-title">Ervaren wat AI kan</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-w1" aria-label="Workshop 1: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-w1" hidden>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-1"><span class="sub-num">1</span><span>Het voorbeeld</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-1-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>1.1</span><span>Het veld</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-2"><span class="sub-num">2</span><span>Verschillende uitkomsten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-2-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.1</span><span>De drie uitkomsten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-2-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.2</span><span>Wat erachter zat</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-3"><span class="sub-num">3</span><span>Je eigen onboardingbot</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.1</span><span>De vijf ingrediënten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.2</span><span>Speel met de toon</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-3"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.3</span><span>Vastgelopen, of klaar?</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-4"><span class="sub-num">4</span><span>Kritisch kijken</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-4-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.1</span><span>De testkaart</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-5"><span class="sub-num">5</span><span>Zo kan het ook</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-5-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.1</span><span>Quiz en video</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-6"><span class="sub-num">6</span><span>Terug naar je eigen werk</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-6-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.1</span><span>De signalen</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-6-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.2</span><span>Dit kwam van jullie</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#tussendoor"><span class="sub-num">7</span><span>Tussen de workshops</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#bouwopdracht"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.1</span><span>Bouw één ding</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#werkblad"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.2</span><span>Het werkblad</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#spreekuur"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.3</span><span>Het spreekuur</span></a>
+      </div>
+    </div>
+    <div class="nav-group" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="hulp.html"><span class="nav-num">?</span><span class="nav-text"><span class="nav-kicker">Hulp</span><span class="nav-title">Naslag en tips</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-hulp" aria-label="Hulp: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-hulp" hidden>
+        <a class="nav-link sub" href="hulp.html#werkwijzen"><span class="sub-num"></span><span>De werkwijzen uit de training</span></a>
+        <a class="nav-link sub" href="hulp.html#instructie"><span class="sub-num"></span><span>Een goede instructie</span></a>
+        <a class="nav-link sub" href="hulp.html#prompts"><span class="sub-num"></span><span>Voorbeeldprompts</span></a>
+        <a class="nav-link sub" href="hulp.html#leren"><span class="sub-num"></span><span>Verder leren</span></a>
+        <a class="nav-link sub" href="hulp.html#vragen"><span class="sub-num"></span><span>Veelgestelde vragen</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="hero-top">
+        <span class="label-bar">Workshop 1 · twee uur</span>
+        <a class="slides-btn" href="slides-1.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg>Bekijk de slides</a>
+      </div>
+      <h1>Ervaren wat <span class="wave">AI</span> kan</h1>
+      <p class="hero-sub">Na twee uur heb je een eigen onboardingbot op de documenten van het Diabetes Fonds, getest door een collega. Je hebt gezien wat het verschil maakt in wat je AI meegeeft. En je hebt twee of drie situaties uit je eigen werk waar dit terugkomt.</p>
+      <p class="reader-hint"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.1</span> Zie je dit op een slide, dan staat het hier onder dat nummer. In het menu klik je er direct naartoe.</p>
+      <p class="groups-line">Groep A: dinsdag 13 oktober, 13:30 tot 15:30 · Groep B: donderdag 15 oktober, 9:00 tot 11:00 · Groep C: dinsdag 27 oktober, 13:30 tot 15:30</p>
+    </section>
+
+    <section class="section" id="workshop-1">
+
+
+      <div class="step" id="w1-stap-1">
+        <div class="step-head"><h3>Stap 1 · Het voorbeeld</h3><span class="step-time">15 minuten</span></div>
+        <p>We pakken één voorbeeld: je komt werken bij het Diabetes Fonds. Wat heb je dan allemaal nodig? Daar kijk je door twee brillen naar. Twee minuten, alleen.</p>
+        <div class="postits">
+          <div class="postit yellow">
+            <div class="who">De bril van wie iemand inwerkt</div>
+            Wat moet een nieuwe collega na de eerste week echt weten? Eén ding per post-it.
+          </div>
+          <div class="postit pink">
+            <div class="who">De bril van de nieuwe medewerker</div>
+            Welke vragen ga je in je eerste week stellen?
+          </div>
+        </div>
+        <p>Schrijf op post-its of direct op de flip-over. Dit is je eigen lat voor de rest van de workshop: als je vooraf opschrijft wat je verwacht, lees je anders wat AI ervan maakt. De vragen stel je straks aan je bot.</p>
+        <div class="rmark" id="w1-1-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>1.1</span><span>Het veld</span></div>
+        <div class="note">
+          De documenten die voor je klaarstaan. Er ontbreekt vast iets. Daar werk je vandaag mee. De spelregel staat op de <a href="index.html#voorbereiding">startpagina</a>.
+        </div>
+      </div>
+
+      <div class="step" id="w1-stap-2">
+        <div class="step-head"><h3>Stap 2 · Dezelfde vraag, verschillende uitkomsten</h3><span class="step-time">20 minuten</span></div>
+        <p>Stel eerst zelf de korte vraag. Nieuwe chat in Claude of Copilot, geen bestanden erbij:</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Wat moet een nieuwe medewerker van het Diabetes Fonds weten?</pre></div>
+        <p>Leg het antwoord naast de post-its. Hieronder staan drie uitkomsten op dezelfde vraag. Houd je eigen antwoord ernaast en bespreek in duo's:</p>
+        <div class="rmark" id="w1-2-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.1</span><span>De drie uitkomsten</span></div>
+        <details class="fold">
+          <summary>Uitkomst 1</summary>
+          <div class="fold-body uitkomst">
+<p>Het Diabetes Fonds is een fonds voor onderzoek en voorlichting, geen zorgorganisatie. Dat verklaart bijna alles wat je intern tegenkomt.</p>
+<p><strong>Missie en positie</strong></p>
+<p>Het fonds wil diabetes voorkomen en genezen, via wetenschappelijk onderzoek en voorlichting. Het motto is "iedereen vrij van diabetes". <em>(diabetesfonds)</em><br>De drie hoofddoelen zijn type 1 genezen, type 2 voorkomen en een betere kwaliteit van leven voor iedereen met diabetes. <em>(diabetes)</em><br>De inkomsten komen alleen van giften: collecte, acties, erfenissen en een paar sponsors zoals de VriendenLoterij. Het geld komt dus van particulieren, en daar draait het merk op. <em>(Wikipedia)</em><br>Het fonds is ANBI en CBF-erkend. Verantwoording en integriteit zijn geen bijzaak, dus check bij elke claim of campagne of die past binnen de CBF-regels. <em>(diabetesfonds)</em></p>
+<p><strong>Cijfers die je moet kennen</strong></p>
+<p>Elke week krijgen 1.000 mensen in Nederland de diagnose diabetes. Inmiddels hebben 1,2 miljoen mensen diabetes, en de helft krijgt blijvende gezondheidsproblemen. <em>(diabetes)</em><br>Volgens onderzoek van het Nederlands Cohorten Consortium hebben ongeveer 400.000 Nederlanders diabetes type 2 zonder het te weten. Het fonds noemt dit een verborgen crisis, en het is een terugkerend thema in de communicatie. <em>(fondsenwerving)</em></p>
+<p><strong>Strategie</strong></p>
+<p>Het kader is het Meerjarenimpactplan 2025-2028, "Samen én voorop". Daarnaast is er een jaarplan 2026. Lees beide in je eerste week. <em>(diabetesfonds)</em><br>Voor type 2 zet het fonds de Diabetes Risico Test breed in en zoekt het aanvullende manieren voor vroege opsporing. <em>(diabetesfonds)</em><br>Alles hangt aan de missie als kapstok, met drie Theories of Change: één voor de hele organisatie en twee voor de inhoudelijke pijlers. Verwacht dat je werk daaraan wordt gekoppeld. <em>(grantthornton)</em></p>
+<p><strong>Organisatie en samenwerking</strong></p>
+<p>De Raad van Toezicht controleert, de Wetenschappelijke Adviesraad beoordeelt onderzoek en de Maatschappelijke Adviesraad van ervaringsdeskundigen denkt mee. <em>(diabetesfonds)</em><br>De teams zijn onder meer marketing en communicatie, fondsenwerving, en kennis en innovatie. Marketing en fondsenwerving zitten dicht op elkaar, en inhoudelijke experts horen daar structureel bij. <em>(grantthornton)</em><br>Het fonds werkt samen met bedrijven, wetenschappers en universiteiten. Diabetes.nl is een gezamenlijk initiatief en een belangrijk voorlichtingskanaal. <em>(diabetes)</em></p>
+<p><strong>Doelgroep, met een kanttekening</strong></p>
+<p>Een mediacase noemt vrouwen van 45+ als belangrijkste geefdoelgroep, naast groei in spontane naamsbekendheid onder alle 18-plussers. Die case is een paar jaar oud. Vraag dus na of dit nog de actuele segmentatie is. <em>(stroom)</em></p>
+<p><strong>Wat ik in week één zou doen</strong></p>
+<p>Lees het impactplan en het jaarplan 2026.<br>Vraag per team welke KPI's echt sturen: naamsbekendheid, donaties, bereik van de risicotest.<br>Vraag hoe wetenschappelijke claims worden getoetst voordat ze naar buiten gaan. Bij een gezondheidsfonds is dat de meest kwetsbare plek.</p>
+<p><strong>Sources:</strong></p>
+<ul><li>Over het Diabetes Fonds</li><li>Visie Diabetes Fonds</li><li>Over het Diabetes Fonds, diabetes.nl</li><li>Diabetes Fonds op Wikipedia</li><li>Vakblad Fondsenwerving, 10 februari 2026</li><li>Impactgericht werken bij het Diabetes Fonds</li><li>STROOM-case</li></ul>
+</div>
+        </details>
+        <details class="fold">
+          <summary>Uitkomst 2</summary>
+          <div class="fold-body uitkomst">
+<h4>Onboarding-overzicht Diabetes Fonds (oktober 2026)</h4>
+<p>Het Diabetes Fonds is een middelgroot, CBF-erkend gezondheidsfonds uit Amersfoort (circa € 11 miljoen inkomsten in 2025, 38 medewerkers) dat zijn geld vooral ophaalt bij particulieren. Het staat midden in een strategie ("Samen én voorop", 2025-2028) die draait om genezing van type 1, preventie en vroege opsporing van type 2, en groei van de fondsenwerving naar ruim € 13 miljoen in 2028. Voor een digital marketeer is de kern: de Diabetes Risicotest en de "verklein je risico"-campagne zijn het merk-anker, digitale werving moet de dalende traditionele kanalen compenseren, en je start precies in de collecteweek.</p>
+<h5>TL;DR</h5>
+<ul><li><strong>Wat het is:</strong> Stichting Diabetes Fonds (opgericht 1978, CBF-erkend sinds 1997, ANBI) financiert onderzoek en voorlichting met als missie "Iedereen vrij van diabetes"; het ontvangt geen overheidssubsidie en haalde in 2025 € 10,94 miljoen op, waarvan 76% van particulieren, bij € 12,79 miljoen uitgaven (bewust ingeteerd op reserves, zoals begroot).</li><li><strong>Strategie:</strong> het Meerjarenimpactplan 2025-2028 stuurt op drie impactdoelen (type 1 genezen, minder type 2, betere zorg en kwaliteit van leven) en expliciet op "een sterk merk, robuuste fondsenwerving" met meer digitale en datagedreven werving en een jongere donateursgroep; 2028 is het 50-jarig jubileum.</li><li><strong>Wat jij direct moet doen:</strong> lees het meerjarenplan, het jaarplan 2026 en het jaarverslag 2025; leer de kerncijfers (1,2 miljoen mensen met diabetes; circa 400.000 met onontdekte type 2 volgens het Nederlands Cohorten Consortium, dat in opdracht van het Fonds data van circa 200.000 mensen uit 11 cohorten analyseerde; 1,3 tot 1,5 miljoen mensen van 40 tot 75 jaar met prediabetes volgens de factsheet van Beran en Schram uit 2024) en het woordgebruik ("mensen met diabetes", nooit schuld suggereren); en vraag in week 1 naar de collecteresultaten, de donateurs-data-infrastructuur en de merkrichtlijnen.</li></ul>
+<h5>Key Findings</h5>
+<table><tr><th>Onderwerp</th><th>Kern</th><th>Verifieerbaarheid</th></tr><tr><td>Rechtsvorm</td><td>Stichting Diabetes Fonds, Stationsplein 139, Amersfoort; KvK 41178025; RSIN 006922703</td><td>Verifieerbaar (diabetesfonds.nl, ANBI-pagina)</td></tr><tr><td>Opgericht</td><td>1978; 50 jaar in 2028</td><td>Verifieerbaar (meerjarenplan)</td></tr><tr><td>CBF-erkenning</td><td>Sinds 1 januari 1997</td><td>Verifieerbaar (CBF-paspoort)</td></tr><tr><td>Inkomsten 2025</td><td>€ 10.944.724, particulieren € 8.266.059 (76%)</td><td>Verifieerbaar (CBF, uit jaarverslag 2025)</td></tr><tr><td>Uitgaven 2025</td><td>€ 12.793.670, waarvan doelbesteding € 10.307.393</td><td>Verifieerbaar (CBF)</td></tr><tr><td>Reserves/fondsen</td><td>€ 7.227.544</td><td>Verifieerbaar (CBF)</td></tr><tr><td>Medewerkers</td><td>38 (CBF, 2025)</td><td>Verifieerbaar; andere bronnen noemen 40 of "zo'n vijftig"</td></tr><tr><td>Directie</td><td>Diena Halbertsma (algemeen directeur sinds 1 maart 2022), Rens Vandeberg (adjunct-directeur)</td><td>Verifieerbaar</td></tr><tr><td>Raad van Toezicht</td><td>André ten Damme (voorzitter), Mayte Oosterveld (voorzitter Financiële Auditcommissie)</td><td>Verifieerbaar (ANBI-pagina); volledige samenstelling niet gecontroleerd</td></tr><tr><td>Aantal donateurs</td><td>Niet gevonden</td><td>Niet verifieerbaar, weggelaten</td></tr></table>
+<h5>Details</h5>
+<h6>1. Wat het Diabetes Fonds is</h6>
+<p><strong>Missie en visie.</strong> Statutaire doelstelling (ANBI-pagina): het fonds "maakt zich sterk om diabetes en complicaties te voorkomen en te genezen" en werft daartoe gelden "voor wetenschappelijk onderzoek en voorlichting, want elke oplossing begint met onderzoek." Het merkmotto is "Iedereen vrij van diabetes". De visie benadrukt dat iedereen diabetes kan krijgen, "ongeacht leeftijd, leefstijl of achtergrond", en dat er met diabetes niet "prima te leven" valt.</p>
+<p><strong>Geschiedenis in het kort.</strong> Opgericht in 1978, een van de eerste goede doelen met het CBF-keurmerk (1997). Directiewissel in 2022: Etelka Ubbens vertrok per 1 januari 2022, Diena Halbertsma (ruim 16 jaar Longfonds, waarvan sinds 2018 in de directie) begon op 1 maart 2022. Met haar komst versnelde volgens de impactcoördinatoren het "impactgericht werken".</p>
+<p><strong>Positie in het landschap.</strong></p>
+<ul><li><strong>Diabetesvereniging Nederland (DVN):</strong> de patiëntenvereniging (sinds 1945; volgens dvn.nl "ruim 30.000 leden", zo'n 300 vrijwilligers en 25 medewerkers, terwijl de ledenlijst van IDF Europe 27.500 leden noemt; ledenraad als hoogste orgaan). Rolverdeling: DVN doet belangenbehartiging, zorg en verzekeringen voor leden; het Fonds financiert onderzoek, preventie en voorlichting. Samen werken ze aan Diabetes.nl, de Diabetes Monitor en de Nationale Diabetes Agenda. Behandel DVN als partner, niet als concurrent, maar wees je bewust dat beide organisaties om aandacht van dezelfde doelgroep vragen.</li><li><strong>Nederlandse Diabetes Federatie (NDF):</strong> de koepel is per 1 januari 2026 gestopt; kennis en producten zijn onder meer bij het Diabetes Fonds en DVN ondergebracht. Het Fonds wordt daarmee meer de spil van het diabetesveld.</li><li><strong>Nationale Diabetes Agenda:</strong> verkenning door NDF en Fonds is afgerond; "In 2026 gaan we aan de slag met het maken van de agenda."</li><li><strong>Diabetes.nl:</strong> gezamenlijk informatieplatform (live sinds 2023) van Diabetes Fonds, DVN, Bas van de Goor Foundation, Stichting Don en Breakthrough T1D (voorheen JDRF Nederland). Hier gaat de publieksinformatie over leven met diabetes naartoe; diabetesfonds.nl is meer het merk- en wervingskanaal.</li><li><strong>Samenwerkende Gezondheidsfondsen (SGF):</strong> binnen het programma "Gezonde Generatie" en de Alliantie Voeding voor een Gezonde Generatie werkt het Fonds met Nierstichting, MDL Fonds (voorheen MLDS) en Hartstichting aan een gezondere voedselomgeving. Met Nierstichting en Hartstichting loopt ook Check@Home (vroege opsporing).</li><li><strong>Onderzoek en kennisinstellingen:</strong> het Fonds noemt zichzelf "de grootste private financier van diabetesonderzoek in Nederland" (eigen claim, niet onafhankelijk getoetst). Vlaggenschip is het RegMed XB-consortium (vervanging van bètacellen, met de verwachting van een eerste klinische test op mensen tegen het eind van de beleidsperiode); daarnaast Cure One. Een "Diabetes Research Nederland"-achtige organisatie heb ik niet gevonden; de relevante structuren zijn RegMed XB, de Wetenschappelijke Adviesraad en de Maatschappelijke Adviesraad (ervaringsdeskundigen die adviseren welke onderzoeken gefinancierd worden).</li></ul>
+<h6>2. Strategie en kernprogramma's</h6>
+<p><strong>Meerjarenimpactplan 2025-2028 "Samen én voorop".</strong> "Samen" omdat het een gezamenlijke opgave is, "voorop" omdat het Fonds zich als aanjager positioneert. Drie impactdoelen:</p>
+<ol><li>Genezen van diabetes type 1 is op termijn mogelijk (RegMed XB, nieuwe projecten of een nieuw consortium, fellowships).</li><li>Minder mensen krijgen diabetes type 2 (gezonde leefomgeving, leefstijlgeneeskunde, vroege opsporing met de Diabetes Risicotest, laagdrempelig testen op prediabetes).</li><li>Mensen met diabetes krijgen de beste zorg en kunnen beter omgaan met het leven met diabetes (technologie, glucosevariatie, vroege en juiste diagnose, ook zeldzame vormen).</li></ol>
+<p>Dwarsverbanden: innovaties versnellen (leningen via een Business Development Instrument, nu samen met andere gezondheidsfondsen), Diabetes.nl, Diabetes Monitor, Nationale Diabetes Agenda.</p>
+<p><strong>Jaarplan 2026.</strong> Bestaat en staat op de visiepagina van diabetesfonds.nl; ik heb de inhoud niet kunnen lezen. Vraag het op dag 1 op.</p>
+<p><strong>Politieke lijn.</strong> Het Fonds publiceerde een manifest met vijf eisen aan een nieuwe regering: gezondheidsverschillen verkleinen, gezonde voeding weer normaal maken, eerder opsporen van type 2, leefstijl als eerste behandeling, en diabetesonderzoek beschikbaar houden in Nederland. Het Fonds pleitte eerder voor een suikertaks. Dit is een stevige, soms confronterende positie richting de voedingsindustrie ("Als fabrikanten het niet doen, dan moet het worden afgedwongen", Halbertsma in De Dikke Blauwe). Houd daar rekening mee bij bedrijfspartnerships in food.</p>
+<p><strong>Actuele onderzoekscall.</strong> Oproep voor onderzoek naar een "praktische of perfecte genezing" van type 1 binnen 15 jaar: één project, maximaal € 750.000, maximaal 5 jaar looptijd.</p>
+<h6>3. Kerncijfers (jaarverslag 2025, via CBF-paspoort)</h6>
+<table><tr><th>Cijfer</th><th>2025</th><th>Begroot 2025 (meerjarenplan)</th></tr><tr><td>Totale inkomsten</td><td>€ 10.944.724</td><td>€ 10.934.000</td></tr><tr><td>Waarvan particulieren</td><td>€ 8.266.059 (76%)</td><td>€ 8.425.000</td></tr><tr><td>Totale uitgaven</td><td>€ 12.793.670</td><td>€ 13.864.665</td></tr><tr><td>Doelbesteding</td><td>€ 10.307.393</td><td>€ 11.137.031</td></tr><tr><td>Reserves en fondsen</td><td>€ 7.227.544</td><td>n.v.t.</td></tr><tr><td>Medewerkers</td><td>38</td><td>n.v.t.</td></tr></table>
+<p><strong>Wat dit betekent.</strong></p>
+<ul><li>De inkomsten kwamen vrijwel exact uit op begroting; de uitgaven lagen ruim € 1 miljoen lager dan begroot. Het tekort (eigen berekening: circa € 1,85 miljoen, inkomsten min uitgaven, exclusief eventuele financiële baten) is een bewuste keuze: het plan begrootte voor 2025 een resultaat van -€ 2,83 miljoen, aflopend naar -€ 0,22 miljoen in 2028. Het Fonds teert gepland in op reserves en moet de inkomsten laten groeien naar € 13,65 miljoen in 2028. Die groeiopgave ligt grotendeels bij particulieren (begroot van € 8,4 naar € 10,6 miljoen). Dat is jouw terrein.</li><li>Eigen berekening: doelbesteding is circa 80,6% van de lasten; werving plus beheer en administratie samen circa 19,4%. De officiële splitsing wervingskosten versus beheer en het officiële kostenpercentage heb ik niet kunnen verifiëren. Ter referentie begrootte het plan voor 2025 € 1.922.859 wervingskosten en € 804.776 beheer en administratie.</li><li>Loterijen: begroot op € 1,8 miljoen per jaar, vlak tot 2028. De Nationale Postcode Loterij steunt het Fonds sinds 2004 en keerde de afgelopen vijf jaar in totaal € 4.201.740 uit; ook de VriendenLoterij is partner. Volgens een persbericht van de Postcode Loterij ontvangt het Fonds daar jaarlijks een bijdrage van 1 miljoen euro; daarnaast kreeg het op 25 juni 2026, samen met de Hartstichting, € 4 miljoen voor CHECK+ (diabetesfonds.nl).</li></ul>
+<p><strong>Niet verifieerbaar en daarom weggelaten of gemarkeerd:</strong> aantal donateurs, nalatenschappen 2025, collecteopbrengst 2025, officieel kostenpercentage fondsenwerving, aantal fte.</p>
+<p><strong>Vrijwilligers: conflicterende cijfers.</strong> De salarissenpagina van het Fonds noemt "ongeveer 24.000 vrijwilligers" (collectanten, wijkhoofden, wetenschappelijke beoordelaars, adviesraden, RvT). Het persbericht voor de collecte 2025 noemt "ruim 16.000 mensen" die collecteren. Het CBF-paspoort 2025 vermeldt vrijwilligers als "Onbekend". Gebruik extern het cijfer dat het jaarverslag 2025 zelf geeft, en vraag intern welke definitie geldt.</p>
+<p><strong>Medewerkers: conflicterende cijfers.</strong> CBF 2025: 38. Magnet.me: 40. Grant Thornton-interview (mei 2026): "zo'n vijftig medewerkers". Waarschijnlijk verschil tussen personen, fte en ingehuurde krachten; vraag het na.</p>
+<h6>4. Financiering en fondsenwerving</h6>
+<p><strong>Kanalen.</strong></p>
+<ul><li><strong>Collecte:</strong> jaarlijks in de laatste week van oktober. In 2026 volgens het CBF-collecterooster van 25 tot en met 31 oktober (het actieplatform noemt 26 tot en met 31 oktober). Je begint dus midden in of vlak voor de belangrijkste publieksweek van het jaar. Doneren kan contant, via QR-code op bus, legitimatie en donatieflyer, en online. Collecteteam: collecte@diabetesfonds.nl.</li><li><strong>Particuliere donateurs:</strong> direct mail, online giften, nieuwsbrief e-dialoog. Het meerjarenplan erkent dat traditionele kanalen (deurcollecte, direct mail) onder druk staan en dat online steeds belangrijker wordt.</li><li><strong>Nalatenschappen en grote giften ("bijzonder geven"):</strong> groeit volgens het Fonds in populariteit; voor 2025 stond een plan voor bijzondere gevers gepland.</li><li><strong>Acties en evenementen:</strong> het actieplatform Diabeatit (eigen acties van particulieren), sportevenementen zoals de Zandvoort Circuit Run (29 maart 2026) en eerder de New York Mini Marathon.</li><li><strong>Bedrijven:</strong> de Gezonde Businessclub (werkgevers die inzetten op vitaliteit), met Gezonde Partners als Abbott, Bosman, CSU, Haus of Hamster, Holie Foods, Lifecheck, Philips, Robidus, Rondom, Tzorg, Wildalp en Zizo, naast Postcode Loterij, Nederlandse Loterij en VriendenLoterij. De Nationale Suiker Challenge (7 dagen zonder toegevoegde suikers) is zowel preventie-instrument als wervings- en partnerinstrument, met een toolkit voor werkgevers.</li></ul>
+<p><strong>Uitdagingen volgens het Fonds zelf</strong> (meerjarenplan): aangescherpte privacywetgeving beperkt wervingskanalen, toenemende concurrentie, verschuiving van loyale naar "vluchtiger geefgedrag". De opdracht: "daadwerkelijke de (digitale) verbinding aangaan met onze donateurs", meer capaciteit en expertise in fondsenwerving, een jongere donateursgroep binden, en richting 2028 een grote fondsenwervende jubileumactiviteit.</p>
+<p><strong>Regels waar je mee werkt.</strong></p>
+<ul><li><strong>Er bestaat geen aparte "Wet op de fondsenwerving".</strong> Het toezicht is sinds 2016 zelfregulering via de Erkenningsregeling Goede Doelen: normen vastgesteld door de onafhankelijke Commissie Normstelling, toezicht door het CBF, jaarlijkse check en eens in de drie jaar een volledige hertoetsing voor grotere organisaties. Bij niet-naleving volgt verscherpt toezicht of intrekking. Of er in 2026 nieuwe wetgeving over toezicht op goede doelen in voorbereiding is, heb ik niet kunnen verifiëren.</li><li><strong>ANBI:</strong> giften zijn aftrekbaar voor donateurs; het Fonds betaalt geen schenk- en erfbelasting. De ANBI-pagina moet verplichte gegevens tonen (bestuurder, RvT, beloningsbeleid).</li><li><strong>De Wet bescherming persoonsgegevens (Wbp) geldt niet meer</strong>; sinds 2018 is dat de AVG. Voor donateurdata gelden AVG plus Telecommunicatiewet artikel 11.7.</li><li><strong>E-mail, sms, app:</strong> opt-in verplicht en aantoonbaar (Telecommunicatiewet 11.7, Code Reclame via e-mail).</li><li><strong>Telemarketing:</strong> opt-in-regime sinds 1 juli 2021; per 1 juli 2026 aangescherpt, maar goede doelen behouden een uitzondering: bellen op basis van een klantrelatie mag tot drie jaar na beëindiging, inclusief vrijwilligers en deelnemers aan manifestaties, mits bij verzamelen en bij elk gesprek een opt-out wordt geboden. De ACM verwacht voor nieuwe contacten een verifieerbare (dubbele) opt-in.</li><li><strong>Reclame Code:</strong> leden van Goede Doelen Nederland moeten zich houden aan de Code Telemarketing (herzien in 2026), Code Postfilter, Code Fieldmarketing en Code Reclame via e-mail. Klachten gaan naar de Reclame Code Commissie. Of het Diabetes Fonds lid is van Goede Doelen Nederland heb ik niet direct bevestigd; de pagina "Richtlijnen van bestuur" zegt dat het Fonds "verschillende gedragscodes, richtlijnen en regelingen" onderschrijft.</li></ul>
+<h6>5. Inhoudelijke basiskennis om na te vertellen</h6>
+<p><strong>De vormen.</strong></p>
+<ul><li><strong>Type 1:</strong> auto-immuunziekte, het lichaam maakt geen insuline meer; niet te voorkomen met leefstijl. Ongeveer 10% van de mensen met diabetes. Gemiddelde leeftijd bij diagnose 32 jaar; kinderen met diabetes hebben bijna altijd type 1.</li><li><strong>Type 2:</strong> ongeveer 90%; ontstaat door een combinatie van leeftijd, leefstijl, gewicht, erfelijkheid, stress en omgeving. Gemiddelde diagnoseleeftijd 60 jaar, maar volgens Nivel "geen ouderdomsziekte meer" (circa 1.400 tieners, 4.900 twintigers en 18.300 dertigers met type 2).</li><li><strong>Prediabetes:</strong> voorstadium; volgens de factsheet van Beran en Schram voor het Diabetes Fonds (16 april 2024) hebben "tussen de 1,3 en 1,5 miljoen mensen" van 40 tot 75 jaar prediabetes, met een 9,4 keer hoger relatief risico op type 2, en ontwikkelt 14% type 2 binnen een mediane follow-up van 8,2 jaar.</li><li><strong>Andere vormen:</strong> zwangerschapsdiabetes en zeldzame (erfelijke) vormen; het meerjarenplan wil dat zorgverleners die beter herkennen.</li></ul>
+<p><strong>Aantallen (ken het verschil tussen de bronnen).</strong></p>
+<table><tr><th>Bron</th><th>Cijfer</th></tr><tr><td>VZinfo/Staat van VZ (Nivel, 2024)</td><td>1.189.900 mensen met diabetes bekend bij de huisarts; type 1 circa 100.000; type 2 circa 1.101.400</td></tr><tr><td>Nivel voor Diabetes Fonds (2022)</td><td>108.100 type 1, 1.064.800 type 2; circa 50.900 nieuwe diagnoses</td></tr><tr><td>Communicatie Diabetes Fonds</td><td>1,2 miljoen (1 op de 14), "elke week 1.000" nieuwe diagnoses, "de helft krijgt complicaties"</td></tr><tr><td>Nederlands Cohorten Consortium voor het Fonds (10 februari 2026; data van circa 200.000 mensen uit 11 cohorten, waaronder Lifelines, de Rotterdam Studie en De Maastricht Studie, 25 jaar gevolgd)</td><td>circa 400.000 mensen met onontdekte type 2 (1 op de 3 mensen met type 2), 33% meer in vijf jaar; prof. Miranda Schram: "Voor het eerst is deze verborgen groep goed en betrouwbaar in beeld gebracht"</td></tr><tr><td>Meerjarenplan</td><td>1 op 3 volwassenen van 45+ krijgt diabetes in 2040 bij ongewijzigde trends</td></tr></table>
+<p>Let op: de 1,2 miljoen gaat over gediagnosticeerde mensen bij de huisarts; de 400.000 komt daar bovenop. Tel ze niet zomaar op in campagnes zonder uitleg.</p>
+<p><strong>Actuele ontwikkelingen.</strong></p>
+<ul><li><strong>Preventie en vroege opsporing:</strong> de Diabetes Risicotest is het centrale instrument; het Fonds wil laagdrempelig testen op prediabetes, ook zonder huisarts, maar "zonder dat de druk op de zorg toeneemt".</li><li><strong>Technologie:</strong> barrières voor gebruik van hulpmiddelen (sensoren, pompen, kunstalvleesklier) wegnemen; Diatech-keuzehulp op Diabetes.nl.</li><li><strong>Onderzoek:</strong> celvervanging (RegMed XB), immuuntherapie en bètacelbescherming; recent nieuws op de site gaat over bètacellen die zich "verjongen" om afweer te ontwijken en over vitamine B6 en kleine bloedvaatjes bij type 2.</li><li><strong>Internationaal:</strong> het Wereld Diabetes Dag-thema (14 november) voor 2026-2027 is "Early Action on Diabetes" (IDF), dat sluit direct aan op de opsporingsboodschap van het Fonds. Kans voor november-content.</li></ul>
+<p><strong>Taal, tone of voice en gevoeligheden.</strong></p>
+<ul><li>Zeg "mensen met diabetes", niet "diabeten" of "diabetici". Het Algemeen Nederlands Woordenboek noteert dat "diabeet" "niet door iedere suikerpatiënt op prijs gesteld" wordt.</li><li>Vermijd "ouderdomssuiker": feitelijk achterhaald en stigmatiserend.</li><li>Het Fonds gebruikt zelf "suikerziekte" alleen als zoekterm (sitetitel); in lopende tekst is "diabetes" de norm.</li><li>Stigma is reëel: een review in Clinical Diabetes (2022) noemt een onderzoek waarin 76% van de mensen met type 1 en 52% met type 2 stigma ervoer, vaak als "karakterfout of falen van persoonlijke verantwoordelijkheid". Preventieboodschappen over type 2 moeten dus niet klinken als schuld. Het Fonds framet dit zelf via "iedereen kan diabetes krijgen" en persoonlijke verhalen van mensen die "niet in het verwachte plaatje passen" (Bianca, Ad en Arthur, september 2026).</li><li>Maak type 1 en type 2 niet op één hoop: mensen met type 1 ergeren zich aan leefstijlboodschappen die op hen worden geprojecteerd. Het meerjarenplan maakt daarom onderscheid: massamediaal voor type 2-risico, directe en persoonlijke verbinding voor type 1.</li><li>Beloof geen genezing op korte termijn: het Fonds zegt zelf "Niet morgen en altijd later dan we zouden willen."</li><li>Medische claims: laat inhoud checken door de kennis- en innovatieteams; gebruik bronvermelding (Nivel, RIVM).</li></ul>
+<h6>6. Merk, communicatie en digitaal</h6>
+<p><strong>Merkidentiteit.</strong> Motto en merkbelofte "Iedereen vrij van diabetes". De merkstrategie en de campagne uit 2021 zijn ontwikkeld door bureau DEAR; of DEAR nog het huidige bureau is, heb ik niet kunnen verifiëren. Kernwaarden (meerjarenplan): vooruitstrevend, motiverend, deskundig en verbindend; "eerlijk, optimistisch en waar nodig met lef". Het plan zegt dat het Fonds "meer dan voorheen, de ruimte claimen" mag voor zijn boodschap: verwacht een urgente, stevige toon, geen zachte.</p>
+<p><strong>Vier communicatiesporen (meerjarenplan).</strong></p>
+<ol><li>Massamediaal: risico op prediabetes en type 2.</li><li>Directe, persoonlijke verbinding met mensen met type 1 (levensfase-gerichte informatie; zij zijn ook een belangrijke donateursgroep).</li><li>Samenwerking met bedrijven rond gezond leven op de werkvloer.</li><li>Met andere gezondheidsfondsen werken aan een gezondere leefomgeving.</li></ol>
+<p><strong>Campagnes.</strong></p>
+<ul><li><strong>"Verklein je risico op diabetes type 2"</strong>: meerjarige campagne gericht op de Diabetes Risicotest; aangedreven door het 400.000-onderzoek (februari 2026, breed opgepikt door onder meer Hart van Nederland en WNL). Dit is je belangrijkste lopende campagne.</li><li><strong>"Iedereen vrij van diabetes" (2021)</strong>: een jaar lang tv, radio en online, met persoonlijke verhalen en mini-documentaires. Nuttig als referentie voor de merkarchitectuur, maar vijf jaar oud.</li><li><strong>Nationale Suiker Challenge</strong>: jaarlijks in juni, maar het hele jaar door te doen; digitaal magazine, e-mail en social.</li></ul>
+<p><strong>Kanalen.</strong> diabetesfonds.nl (merk, werving, Diabetes Risicotest, nieuws), Diabetes.nl (gezamenlijk informatieplatform en community), nieuwsbrief e-dialoog, LinkedIn (actief met onderzoekscalls, manifest en partnercontent), Diabeatit (acties), en pers (persberichten via vakmedia). Welke andere socials actief zijn en met welk bereik, heb ik niet kunnen verifiëren; vraag de kanaalcijfers op.</p>
+<p><strong>Wat dit voor jou betekent.</strong> De groeiopgave ligt bij particuliere, digitale werving; tegelijk beperken privacyregels de kanalen. De logische route is first-party data opbouwen via de Risicotest, de Suiker Challenge en Diabeatit (met correcte opt-ins), en die leads converteren naar donateurs. Check in week 1 of die funnel er al staat.</p>
+<h6>7. Organisatie en cultuur</h6>
+<ul><li><strong>Bestuursmodel:</strong> directie (Diena Halbertsma, algemeen directeur; Rens Vandeberg, adjunct-directeur) onder toezicht van een onbezoldigde Raad van Toezicht (voorzitter André ten Damme; Mayte Oosterveld, voorzitter Financiële Auditcommissie). Adviesorganen: Wetenschappelijke Adviesraad en Maatschappelijke Adviesraad.</li><li><strong>Teams:</strong> in elk geval marketing en communicatie, fondsenwerving, en kennis en innovatie, plus finance en HR. Een volledig organogram is niet openbaar gevonden.</li><li><strong>Werkwijze:</strong> "impactgericht werken" met twee impactcoördinatoren (Joya Nahon en Kim Brouwers), drie Theories of Change (één organisatiebreed, twee per pijler), impactvragen in de jaarcyclus. Hun eigen kritiek: gesprekken over impact vertalen zich "nog niet altijd in andere keuzes", en "Mensen zien veel kansen en willen veel doen", focus blijft lastig. Verwacht dat marketingplannen getoetst worden aan de impactdoelen; gebruik die taal.</li><li><strong>Arbeidsvoorwaarden:</strong> eigen regeling, marktconform salaris, 8% vakantiegeld, pensioen via PFZW, opleidingsmogelijkheden; geen vaste 13e maand of bonus. Het salaris van de directeur staat in het jaarverslag.</li><li><strong>Cultuur volgens het Fonds:</strong> open, vertrouwen, diversiteit en inclusie, "practice what you preach" op gezondheid. Magnet.me: circa 70% vrouwen, gemiddelde leeftijd 44. Onafhankelijke werknemersreviews heb ik niet gevonden; dit beeld is dus grotendeels zelfrapportage.</li><li><strong>Kantoor:</strong> Stationsplein 139 (2e verdieping), Amersfoort, direct naast het station.</li></ul>
+<h5>Recommendations: eerste 30 dagen</h5>
+<p><strong>Lezen (week 1).</strong></p>
+<ol><li>Meerjarenimpactplan 2025-2028 "Samen én voorop" (openbaar, pdf op diabetesfonds.nl).</li><li>Jaarplan 2026 (openbaar via de visiepagina).</li><li>Jaarverslag 2025 (pdf via het CBF-paspoort) en jaarverslag 2024 (diabetesfonds.nl).</li><li>Intern: merkrichtlijnen en tone-of-voice-document, campagne-evaluaties "verklein je risico", fondsenwervingsplan en donateursanalyses, privacy- en opt-in-beleid, de Theory of Change.</li><li>Extern: CBF-paspoort, Goede Doelen Nederland over telemarketing en online marketing, Nivel/VZinfo-cijfers.</li></ol>
+<p><strong>Vragen in week 1.</strong></p>
+<ul><li>Hoe verliep de collecte 2026 en welk aandeel ging digitaal (QR, online)?</li><li>Wat zijn de 2026-doelen voor particuliere baten, en hoeveel is daarvan digitaal?</li><li>Hoeveel actieve donateurs zijn er, wat is de retentie en de gemiddelde leeftijd?</li><li>Hoe zit de data-stack in elkaar (CRM, marketing automation, tracking na cookie- en privacyregels) en wie is de privacy-eigenaar?</li><li>De Risicotest werd in 2024 door ruim 420.000 mensen ingevuld, van wie één op de drie een verhoogde risicoscore kreeg (Diabetesgeneeskunde.nl), en na de oproep begin 2026 door ruim 300.000 mensen (Halbertsma in een persbericht van de Postcode Loterij): hoeveel daarvan geven opt-in en worden donateur?</li><li>Wat is de rolverdeling tussen diabetesfonds.nl en Diabetes.nl in SEO en content?</li><li>Welk bureau voert de campagnes uit en wat is het mediabudget?</li><li>Welke KPI's gelden voor mijn team en hoe worden ze aan de impactdoelen gekoppeld?</li><li>Wat zijn de plannen voor de jubileumactiviteit in 2028?</li></ul>
+<p><strong>Stakeholders.</strong></p>
+<ul><li>Intern: Diena Halbertsma en Rens Vandeberg; de teamleiders van fondsenwerving, marketing en communicatie, en kennis en innovatie; de impactcoördinatoren; het collecteteam; de privacy- of data-eigenaar; de manager Diabetes.nl.</li><li>Extern: DVN (communicatie en ledenraad), de partners van Diabetes.nl, de collega's bij Hartstichting, Nierstichting en MDL Fonds (SGF), de loterijen, de Gezonde Partners, het huidige reclamebureau, en ervaringsdeskundigen uit de Maatschappelijke Adviesraad.</li></ul>
+<p><strong>Rond dag 30 opleveren.</strong> Een korte analyse van de digitale funnel (Risicotest, opt-in, donateur), een overzicht van kanaalprestaties, en drie tot vijf quick wins rond Wereld Diabetes Dag (14 november, thema "Early Action on Diabetes").</p>
+<h5>Caveats</h5>
+<ul><li>Ik kon het jaarverslag 2025 zelf niet openen; de 2025-cijfers komen uit het door het CBF getoetste erkenningspaspoort, dat zegt dat ze uit het jaarverslag 2025 komen. Resultaat en percentages zijn eigen berekeningen.</li><li>Niet gevonden en dus niet genoemd: aantal donateurs, nalatenschappen, collecteopbrengst 2025, officieel kostenpercentage, fte.</li><li>Er zijn tegenstrijdige cijfers over vrijwilligers (16.000 tot 24.000, CBF: onbekend) en medewerkers (38 tot circa 50).</li><li>De collecteweek van 2026 wordt verschillend vermeld (25 of 26 tot en met 31 oktober).</li><li>"Grootste private financier van diabetesonderzoek" is een claim van het Fonds zelf.</li><li>Cultuurinformatie komt vooral van het Fonds zelf en van een klantcase van adviesbureau Grant Thornton (commercieel belang).</li><li>De wet- en regelgeving is samengevat voor oriëntatie en is geen juridisch advies; stem opt-in-kwesties af met de privacy-eigenaar.</li></ul>
+</div>
+        </details>
+        <details class="fold">
+          <summary>Uitkomst 3</summary>
+          <div class="fold-body uitkomst">
+<h4>Onboardingpakket eerste werkweek, Diabetes Fonds</h4>
+<p>Welkom. Dit pakket komt uit de zeven documenten die je kreeg. Waar iets ontbreekt of waar de documenten elkaar tegenspreken, staat dat erbij.</p>
+<h5>1. Waar het Diabetes Fonds voor staat</h5>
+<ul><li><strong>Missie:</strong> "Iedereen vrij van diabetes". (Meerjarenimpactplan, voorwoord)</li><li><strong>Drie hoofddoelen:</strong> genezen van diabetes type 1 is op termijn mogelijk; minder mensen krijgen diabetes type 2; mensen met diabetes krijgen de beste (zelf)zorg en kunnen beter omgaan met het leven met diabetes. (Jaarplan 2026, hoofdstuk 1)</li><li><strong>Rol:</strong> belangrijk onderzoek mogelijk maken, partijen bij elkaar brengen, en diabetes op de maatschappelijke en politieke agenda zetten. (Jaarplan 2026, voorwoord)</li><li><strong>Geld:</strong> het fonds krijgt geen overheidssubsidie en is afhankelijk van giften en samenwerkingen. (Meerjarenimpactplan, 3.2)</li><li><strong>Kernwaarden:</strong> vooruitstrevend, motiverend, deskundig en verbindend. (Meerjarenimpactplan, 3.3; Jaarplan 2026, 3.3)</li><li><strong>Organisatie:</strong> algemeen directeur Diena Halbertsma, drie MT-leden, teams voor kennis en innovatie, fondsenwerving, informatiemanagement en marketingcommunicatie, een staf (onder meer HR en finance) en Diabetes.nl. (Introductiemail; Organogram)</li><li><strong>Plek:</strong> Huis voor de Gezondheid in Amersfoort, samen met andere gezondheidsfondsen. (Introductiemail; Jaarverslag 2025, 4.2.2)</li><li>In 2028 bestaat het fonds 50 jaar. (Meerjarenimpactplan, hoofdstuk 1)</li></ul>
+<h5>2. Strategische prioriteiten</h5>
+<ul><li><strong>Meerjarenstrategie "Samen én voorop" (2025-2028).</strong> 2026 is het tweede jaar. (Jaarplan 2026, hoofdstuk 1)</li><li><strong>Twee impactpijlers.</strong> Pijler 1: diabetes type 1 en andere vormen. Pijler 2: type 2, zwangerschapsdiabetes en prediabetes. (Organogram; Jaarplan 2026, hoofdstuk 2)</li><li><strong>Veranderpaden per pijler.</strong> Pijler 1: genezen, betere zorg, zelfmanagement. Pijler 2: complicaties, passende behandeling, zelfmanagement, vroege opsporing, gezonde omgeving, publieke gezondheid. (Jaarplan 2026, hoofdstuk 1)</li><li><strong>Impactgericht werken.</strong> Twee impactcoördinatoren kijken over de afdelingen heen. In 2026 bouwt het fonds verder aan een impactmanagementsysteem en een database voor impactdata. (Jaarverslag 2025, 4.1.2; Jaarplan 2026, 3.3)</li><li><strong>Fondsenwerving laten groeien.</strong> Minder afhankelijk worden van een kleine groep donateurs, meer online werven, meer aandacht voor grote gevers, vermogensfondsen en nalatenschappen. Doel: 13 miljoen aan inkomsten in 2028. (Jaarplan 2026, 3.1; Meerjarenimpactplan, 3.2)</li></ul>
+<h5>3. Belangrijke programma's en activiteiten</h5>
+<ul><li><strong>RegMed XB:</strong> onderzoek naar een celvervangende therapie voor type 1. De eerste klinische studie wordt verwacht in 2028 of 2029. (Jaarplan 2026, 2.1)</li><li><strong>Cure One:</strong> onderzoekscentrum van het LUMC en Stichting DON, sinds 2025 strategisch partner. (Jaarverslag 2025, 2.1)</li><li><strong>Diabetes Risicotest:</strong> sinds mei 2024 meer dan 725.000 keer afgerond; ruim een derde had een verhoogd risico. (Jaarverslag 2025, 2.2)</li><li><strong>Nationale Suiker Challenge:</strong> in 2025 meer dan 100.000 deelnemers; in 2026 de negende editie. (Jaarverslag 2025, 3.2; Jaarplan 2026, 3.2)</li><li><strong>Diabetes.nl:</strong> informatieplatform en community (het Trefpunt) met partners; in 2025 meer dan 1 miljoen bezoeken. (Jaarverslag 2025, 2.3; Jaarplan 2026, 2.2)</li><li><strong>Diabetes Monitor en Nationale Diabetes Agenda:</strong> allebei met Diabetesvereniging Nederland, allebei in 2026 van start. (Jaarplan 2026, 2.2; Jaarverslag 2025, 2.3)</li><li><strong>De Gezonde Generatie:</strong> samen met 23 gezondheidsfondsen aan een gezondere leefomgeving. (Jaarplan 2026, 2.2)</li><li><strong>Fondsenwerving in actie:</strong> de collecte (2025: € 1.180.879), de Zandvoort Circuit Run, het Handwerkfestijn en de Gezonde Businessclub voor werkgevers. (Jaarverslag 2025, 3.1 en 3.3.3)</li></ul>
+<h5>4. Begrippen</h5>
+<table><tr><th>Begrip</th><th>Betekenis</th><th>Bron</th></tr><tr><td>Pijler 1 / pijler 2</td><td>Type 1 en anders / type 2, zwangerschapsdiabetes en prediabetes</td><td>Organogram</td></tr><tr><td>IC / TL</td><td>Impactcoördinator / teamleider</td><td>Jaarverslag 2025, organogram</td></tr><tr><td>Veranderpad</td><td>Route met een eigen impactdoel binnen een pijler</td><td>Jaarplan 2026</td></tr><tr><td>HvdG</td><td>Huis voor de Gezondheid, het pand dat je deelt met andere fondsen</td><td>Introductiemail</td></tr><tr><td>SGF</td><td>Samenwerkende Gezondheidsfondsen</td><td>Introductiemail; Jaarplan 2026</td></tr><tr><td>DVN</td><td>Diabetesvereniging Nederland, zit op dezelfde etage</td><td>Introductiemail</td></tr><tr><td>KCC</td><td>Klantcontactcenter</td><td>Introductiemail; Jaarverslag 2025, 4.1.5</td></tr><tr><td>InSite</td><td>Intranet (AFAS): werkplek inschrijven, verlof, declaraties, loonstroken</td><td>Introductiemail</td></tr><tr><td>De druppel</td><td>Je toegangspas, ook nodig om te printen</td><td>Introductiemail</td></tr><tr><td>Zeepkist</td><td>Gezamenlijk moment met alle medewerkers; je stelt je voor op de eerste na je start</td><td>Checklist indiensttreding</td></tr></table>
+<h5>5. Wat je eerst leest</h5>
+<ol><li><strong>De introductiemail:</strong> alles voor dag één (pas, laptop, InSite, apps, pand, privacy, BHV).</li><li><strong>Organogram en teams en functies:</strong> wie zit waar.</li><li><strong>Jaarplan 2026:</strong> wat er dit jaar gebeurt.</li><li><strong>Meerjarenimpactplan 2025-2028:</strong> waarom het fonds deze keuzes maakt.</li><li><strong>Jaarverslag 2025, hoofdstuk 1 tot en met 4:</strong> wat er al bereikt is. De jaarrekening kan later.</li></ol>
+<p>De checklist indiensttreding is voor HR en de managementassistent. Je hoeft hem niet te lezen, maar hij laat zien wat er voor je geregeld wordt.</p>
+<h5>6. Vraag het een collega</h5>
+<ul><li>Bij welke pijler en welk veranderpad hoort jouw werk?</li><li>Wat gebeurt er in de Zeepkist, en hoe vaak is die?</li><li>Welke systemen heb jij nodig? De checklist laat Salesforce open (ja of nee).</li><li>Hoe werkt hybride werken in de praktijk: zijn er vaste kantoordagen? Dat staat nergens.</li><li>Het jaarverslag noemt richtlijnen en een routekaart voor generatieve AI (Jaarverslag 2025, 3.4). Die richtlijnen zitten niet in deze set. Vraag waar je ze vindt.</li></ul>
+<h5>7. Wat ontbreekt of niet klopt</h5>
+<ul><li><strong>Aantal medewerkers.</strong> De introductiemail zegt 46 mensen in dienst (versie april 2026). Het jaarverslag zegt 45 medewerkers op 31 december 2025, samen 38 fte. Dat kan allebei kloppen, op een ander moment.</li><li><strong>Aantal teams.</strong> De introductiemail noemt drie teams (kennis en innovatie, fondsenwerving, marketingcommunicatie) plus de staf. Het organogram toont daarnaast informatiemanagement en Diabetes.nl. "Teams en functies" zet fondsenwerving en informatiemanagement bij elkaar.</li><li><strong>Partners van Diabetes.nl.</strong> Het meerjarenimpactplan noemt Stichting JDRF Nederland, het jaarverslag Breakthrough T1D. Mogelijk een naamswijziging; dat staat niet in de documenten.</li><li><strong>De kantoorvloer.</strong> De introductiemail noemt DVN en SGF op de etage. Het jaarverslag noemt ook de Nederlandse Diabetes Federatie, terwijl hetzelfde jaarverslag zegt dat in 2025 besloten is die federatie op te heffen.</li><li><strong>Eerste klinische studie RegMed XB.</strong> Het meerjarenimpactplan zegt tegen het eind van de beleidsperiode (2028), het jaarplan 2028 of 2029.</li><li><strong>Inkomsten 2026.</strong> De meerjarenbegroting rekent op € 11.800.000 aan baten, het jaarplan op € 12.183.000.</li><li><strong>Namen van de pijlers.</strong> Het organogram zegt "type 1 en anders" en "type 2, zwangerschapsdiabetes en prediabetes"; het organogram in het jaarverslag "Genezing en kwaliteit van leven" en "Gezonder leven".</li><li><strong>Niet in de set:</strong> een thuiswerkregeling, de arbeidsvoorwaarden zelf (de checklist zegt dat ze gestuurd worden), de huisstijl en de AI-richtlijnen.</li></ul>
+</div>
+        </details>
+        <ol>
+          <li>Welke geef je een nieuwe collega?</li>
+          <li>Waarom vind je die beter dan de andere?</li>
+          <li>Wat denk je dat er bij elke uitkomst gevraagd is?</li>
+        </ol>
+        <details class="fold reserve" id="w1-2-2">
+          <summary><span class="sum-text"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.2</span>Wat er achter de uitkomsten zat <span class="hint">pas openen na stap 2</span></span></summary>
+          <div class="fold-body">
+            <p class="takeaway">Drie knoppen: wat je vraagt, welk model je gebruikt, en wat je meegeeft.</p>
+            <h4>Uitkomst 1: de korte vraag, zonder documenten</h4>
+            <p>Dezelfde korte vraag die je zelf stelde, in Claude. Eén zin, geen documenten. Claude zocht zelf op het web.</p>
+            <h4>Uitkomst 2: Deep Research, zonder documenten</h4>
+            <p>Precies dezelfde korte vraag, maar met Research aan. Hij zocht tien minuten online en kent jullie eigen documenten niet.</p>
+            <p>Zag je dat hij schreef voor een digital marketeer? Dat stond nergens in de vraag. Claude haalde het uit het geheugen van het account waarmee we hem draaiden. Ook dat is context: wat de tool al van je weet, stuurt het antwoord mee.</p>
+            <h4>Uitkomst 3: met de documenten</h4>
+            <p>Deze opdracht kreeg Claude samen met de zeven onboardingdocumenten: de introductiemail, de checklist indiensttreding, het organogram, teams en functies, het meerjarenimpactplan, het jaarplan 2026 en het jaarverslag 2025.</p>
+            <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Je helpt een nieuwe medewerker van het Diabetes Fonds die volgende week start.
+Gebruik uitsluitend de documenten die je hebt gekregen.
+Maak een toegankelijk onboardingpakket voor de eerste werkweek.
+
+Beschrijf kort:
+- waar het Diabetes Fonds voor staat;
+- de belangrijkste strategische prioriteiten;
+- belangrijke programma's en activiteiten;
+- begrippen die een nieuwe medewerker moet kennen;
+- welke documenten eerst gelezen moeten worden;
+- welke onderwerpen nog uitleg van een collega vragen.
+
+Geef bij belangrijke feitelijke uitspraken de bron.
+Benoem expliciet wanneer informatie ontbreekt of bronnen elkaar tegenspreken.
+Verzin niets.</pre></div>
+          </div>
+        </details>
+      </div>
+
+      <div class="step" id="w1-stap-3">
+        <div class="step-head"><h3>Stap 3 · Je eigen onboardingbot</h3><span class="step-time">30 minuten</span></div>
+        <p>Schrijf zelf een instructie en bouw daarmee een eigen bot op de documenten. In Claude maak je een project, in Copilot een agent. Nog nooit een agent in Copilot gemaakt? Dan <a href="media/agent-maken-in-copilot.mp4" target="_blank" rel="noopener">bekijk het filmpje</a>, zonder geluid. Een goede instructie heeft vijf ingrediënten:</p>
+        <div class="rmark" id="w1-3-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.1</span><span>De vijf ingrediënten</span></div>
+        <ol class="ingredients">
+          <li><div><span class="q">Voor wie is hij?</span><span class="a">een nieuwe collega, eerste week</span></div></li>
+          <li><div><span class="q">Wat moet hij doen?</span><span class="a">vragen over het Diabetes Fonds beantwoorden</span></div></li>
+          <li><div><span class="q">Waarmee?</span><span class="a">alleen deze documenten</span></div></li>
+          <li><div><span class="q">Hoe ziet het antwoord eruit?</span><span class="a">kort, gewone taal, eerst het antwoord, dan het document waar het staat</span></div></li>
+          <li><div><span class="q">Staat het er niet in?</span><span class="a">zeg dat, en verzin niets</span></div></li>
+        </ol>
+        <p>Zet de documenten erin, schrijf je instructie, en stel je bot twee vragen van de flip-over.</p>
+
+        <a class="hulp-link" href="hulp.html#instructie"><div><strong>Meer weten: zo schrijf je een goede instructie</strong><br><span>Tien tips, een opbouw om te kopiëren, en wat je doet als het niet goed gaat. Op de hulppagina.</span></div></a>
+
+        <h4>Doorvragen</h4>
+        <p>Wat staat op de flip-over en weet je bot niet? Vraag het hem. Valt het antwoord tegen, pas dan je instructie aan en vraag het opnieuw.</p>
+
+        <div class="rmark" id="w1-3-2"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.2</span><span>Speel met de toon</span></div>
+        <p>Met één regel in je instructie bepaal jij hoe het antwoord klinkt. Je zag het net met de sportverslaggever.</p>
+        <p>Zet één regel over de toon in je instructie en stel dezelfde vraag nog eens. Hoe moet jouw bot klinken voor een nieuwe collega? Bijvoorbeeld:</p>
+        <ul>
+          <li>alleen feitelijk, zonder franje;</li>
+          <li>wat socialer taalgebruik, alsof een collega het uitlegt;</li>
+          <li>juist erg formeel;</li>
+          <li>of een eigen idee.</li>
+        </ul>
+
+        <details class="fold reserve" id="w1-3-3">
+          <summary><span class="sum-text"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.3</span>Vastgelopen, of klaar? Ons voorbeeld <span class="hint">na vijf minuten nog geen instructie, of je bot werkt al</span></span></summary>
+          <div class="fold-body">
+            <p><strong>Vastgelopen?</strong> Gebruik deze startinstructie. In Claude plak je hem in de instructies van het project, in Copilot in de instructies van de agent. Pas hem daarna aan op wat jouw bot moet doen.</p>
+            <p><strong>Klaar?</strong> Leg je eigen instructie naast deze. Wat heb jij dat hier niet in staat, en andersom? Neem over wat je mist en test je bot opnieuw.</p>
+            <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Je helpt nieuwe collega's van het Diabetes Fonds in hun eerste werkweek.
+Je beantwoordt hun vragen over het Diabetes Fonds.
+
+Gebruik alleen de documenten die je hebt gekregen.
+
+Zo ziet je antwoord eruit:
+- kort en in gewone taal;
+- eerst het antwoord, dan het document waar het staat.
+
+Staat het antwoord niet in de documenten, zeg dat dan en verzin niets.
+Zeg erbij aan wie de nieuwe collega het kan vragen: een collega uit het
+team, de leidinggevende of HR. Spreken documenten elkaar tegen, zeg dat.
+
+Gaat een vraag over iemands eigen situatie, zoals contract, salaris of
+een persoonlijke kwestie, geef dan geen antwoord en verwijs naar HR of
+de leidinggevende.</pre></div>
+          </div>
+        </details>
+        <details class="fold">
+          <summary>Snel klaar?</summary>
+          <div class="fold-body">
+            <p>Geef je bot één voorbeeld van een goed antwoord. Schrijf een vraag op, met het antwoord precies zoals jij het wilt. Zet erboven: "Zo ziet een goed antwoord eruit."</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="step" id="w1-stap-4">
+        <div class="step-head"><h3>Stap 4 · Kritisch kijken</h3><span class="step-time">15 minuten</span></div>
+        <p>Werk in duo's, naast elkaar. Je bent de nieuwe collega bij de bot van de ander: jij typt, op de laptop van de maker. Vijf minuten per bot, dan wissel je.</p>
+        <ol>
+          <li>Stel minstens drie vragen: twee van de flip-over, en één waarvan je denkt dat het antwoord niet in de documenten staat.</li>
+          <li><strong>Zoek het op.</strong> Kies twee feitelijke antwoorden en zoek ze op in de documenten. "Klopt" telt alleen als je de plek kunt aanwijzen.</li>
+          <li>Wat deed de bot bij de vraag waarvan het antwoord niet in de documenten staat?</li>
+          <li>Zou je deze bot een nieuwe collega geven? Kijk naar: klopt het, heeft een nieuwe collega er iets aan, mist er iets, snap je het zonder voorkennis. Eén regel, met waarom.</li>
+        </ol>
+        <div class="rmark" id="w1-4-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.1</span><span>De testkaart</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Antwoord van de bot</th><th>Klopt / klopt niet / niet gevonden</th><th>Waar, in welk document</th></tr></thead>
+            <tbody><tr><td>&nbsp;</td><td></td><td></td></tr><tr><td>&nbsp;</td><td></td><td></td></tr></tbody>
+          </table>
+        </div>
+        <p>Bespreek daarna samen: waar gokte de bot, en kloppen de antwoorden ook echt met de bronnen?</p>
+        <p class="takeaway">Hoe beter je instructie en documenten, hoe beter het antwoord. Controleren blijft jouw werk.</p>
+      </div>
+
+      <div class="step" id="w1-stap-5">
+        <div class="step-head"><h3>Stap 5 · Zo kan het ook</h3><span class="step-time">10 minuten</span></div>
+        <p>Van dezelfde documenten maakten wij nog twee dingen: een quiz voor de nieuwe collega, en de introductiemail als korte video over je eerste werkdag. Dezelfde kennis als in je bot, in een andere vorm.</p>
+        <div class="rmark" id="w1-5-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.1</span><span>Quiz en video</span></div>
+        <p><span class="ph">[Links naar de quiz en de video, na de workshop]</span></p>
+      </div>
+
+      <div class="step" id="w1-stap-6">
+        <div class="step-head"><h3>Stap 6 · Terug naar je eigen werk</h3><span class="step-time">20 minuten</span></div>
+        <p>Wat betekent dit voor jouw werk? Waar zie je parallellen? Twijfel je waar AI kan helpen, let dan op situaties waarin je:</p>
+        <div class="rmark" id="w1-6-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.1</span><span>De signalen</span></div>
+        <ul>
+          <li>veel informatie verwerkt;</li>
+          <li>iets analyseert of vergelijkt;</li>
+          <li>steeds hetzelfde werk doet;</li>
+          <li>voor een leeg vel zit;</li>
+          <li>dezelfde inhoud voor verschillende doelgroepen maakt;</li>
+          <li>iemand zoekt die kritisch meedenkt;</li>
+          <li>informatie omzet naar een andere vorm;</li>
+          <li>lang bezig bent met voorbereiden.</li>
+        </ul>
+        <div class="rmark" id="w1-6-2"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.2</span><span>Dit kwam van jullie</span></div>
+        <p>Uit het aanmeldformulier, in onze woorden. Geen eigen idee? Kies er een voor je <a href="#bouwopdracht">bouwopdracht</a>. Zelfde spelregel: werk je met publieksvragen of artikelen, dan zonder persoonsgegevens. En een beoordeling op bewijskracht checkt altijd een mens.</p>
+        <div class="idea-cards">
+          <div class="idea-card"><h4>Schrijven en verslagen</h4><ul><li>Notulen en verslagen van vergaderingen uitwerken</li><li>Een memo schrijven op basis van eerdere stukken</li><li>Antwoorden op publieksvragen beter formuleren</li><li>Teksten aanscherpen op de schrijfregels van het fonds</li></ul></div>
+          <div class="idea-card"><h4>Zoeken en bijhouden</h4><ul><li>Nieuwe ontwikkelingen in onderzoek bijhouden</li><li>Bronnen zoeken om een antwoord te onderbouwen</li><li>Informatie over mogelijke samenwerkingspartners verzamelen</li><li>Een wetenschappelijk artikel laten beoordelen op bewijskracht</li></ul></div>
+          <div class="idea-card"><h4>Data en rapportages</h4><ul><li>Rapportages naast elkaar leggen en koppelen</li><li>Een impactrapportage maken uit bestaande data</li><li>Een export uit Salesforce of Excel analyseren</li><li>Een stand van zaken maken over een onderwerp</li></ul></div>
+          <div class="idea-card"><h4>Beeld en content</h4><ul><li>Een infographic bedenken en maken</li><li>Content nalopen op fouten en beeldtaal</li><li>Webpagina's controleren op vaste punten</li><li>Een briefing strak trekken</li></ul></div>
+        </div>
+        <p>Schrijf twee of drie situaties uit je eigen werk op. Die neem je mee naar de <a href="#tussendoor">opdracht voor tussendoor</a>.</p>
+      </div>
+        </section>
+
+    <section class="section" id="tussendoor">
+      <div class="section-head">
+        <div class="badge soft">7</div>
+        <div>
+          <h2>Tussen de workshops</h2>
+          <p class="sub">Een half uur bouwen, en het werkblad invullen</p>
+        </div>
+      </div>
+      <p class="lead">Workshop 2 opent met wat jullie gebouwd hebben en waar je vastliep. Niet aan toegekomen? Kom gewoon, en vertel wat je tegenhield. Dat is net zo bruikbaar.</p>
+
+      <div class="step" id="bouwopdracht">
+        <div class="step-head"><h3><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.1</span>Bouw één ding voor je eigen werk</h3><span class="step-time">een half uur</span></div>
+        <p>Kies een van je situaties, of een idee uit <a href="#w1-6-2">wat jullie zelf aandroegen</a>, en doe wat je in workshop 1 voor de onboarding deed: een project in Claude of een agent in Copilot, met de <a href="#w1-stap-3">vijf ingrediënten</a>. Gebruik het minstens één keer, en schrijf op waar je vastliep. Weet je niet meer hoe een agent in Copilot werkt? Dan <a href="media/agent-maken-in-copilot.mp4" target="_blank" rel="noopener">bekijk het filmpje</a>. Hulp bij het schrijven: <a href="hulp.html#instructie">zo schrijf je een goede instructie</a>.</p>
+        <p>Zelfde <a href="index.html#voorbereiding">spelregel</a>: geen persoonsgegevens, donateurs- of gezondheidsgegevens, niets vertrouwelijks.</p>
+      </div>
+
+      <div class="step" id="werkblad">
+        <div class="step-head"><h3><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.2</span>Vul het werkblad in</h3><span class="step-time">één per situatie</span></div>
+        <p>Voor jezelf: vul het in, in een eigen document of op papier, en neem het mee naar workshop 2. Deze pagina slaat niets op. Niet alles ingevuld? Neem mee wat je hebt.</p>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th style="width:42%">Mijn situatie in één zin</th><td></td></tr>
+              <tr><th>Als dit helemaal zou werken, wat is er dan anders aan mijn werk?</th><td></td></tr>
+              <tr><th>Wat doe ik nu, en waar zit het gedoe?</th><td></td></tr>
+              <tr><th>Hoe vaak doe ik dit?</th><td></td></tr>
+              <tr><th>Hoeveel tijd kost het nu?</th><td><span style="color:var(--muted)">een schatting is genoeg</span></td></tr>
+              <tr><th>Kan ik de informatie zelf meegeven, als document of tekst?</th><td><span style="color:var(--muted)">ja / nee. Moet AI zelf in een systeem kunnen, dan is het een kans voor later</span></td></tr>
+              <tr><th>Welk risiconiveau heeft het volgens het kader?</th><td><span style="color:var(--muted)">laag / middel / hoog. Hoog is alles met persoonsgegevens, donateursgegevens, gezondheidsgegevens, HR of subsidiebesluiten: wel opschrijven, niet mee bouwen</span></td></tr>
+              <tr><th>Heb je hiervoor iets gebouwd? Wat, en waar liep je vast?</th><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <details class="fold">
+          <summary>Werkblad als tekst <span class="hint">om te kopiëren</span></summary>
+          <div class="fold-body">
+            <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>WERKBLAD, één per situatie
+
+Mijn situatie in één zin:
+
+Als dit helemaal zou werken, wat is er dan anders aan mijn werk?
+
+Wat doe ik nu, en waar zit het gedoe?
+
+Hoe vaak doe ik dit?
+
+Hoeveel tijd kost het nu? (een schatting is genoeg)
+
+Kan ik de informatie zelf meegeven, als document of tekst? (ja / nee)
+
+Welk risiconiveau heeft het volgens het kader? (laag / middel / hoog)
+
+Heb je hiervoor iets gebouwd? Wat, en waar liep je vast?</pre></div>
+          </div>
+        </details>
+      </div>
+
+      <div class="step" id="spreekuur">
+        <div class="step-head"><h3><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.3</span>Vastgelopen? Kom naar het spreekuur</h3><span class="step-time">een uur, digitaal</span></div>
+        <p>Donderdag 22 oktober (groep A en B) of woensdag 4 november, 13:30 tot 14:30. Teken in via <span class="ph">[link]</span>. Neem mee waar je op vastloopt: een instructie die niet werkt, een uitkomst die tegenvalt, of twijfel over wat mag.</p>
+      </div>
+    </section>
+
+
+    <nav class="page-next" aria-label="Volgende pagina">
+      <a href="index.html"><small>Vorige</small><strong>Home</strong></a>
+      <a class="next" href="hulp.html"><small>Volgende</small><strong>Hulp en naslag</strong></a>
+    </nav>
+
+  </main>
+
+  <footer>
+    <strong>AI-workshops voor het Diabetes Fonds</strong> · fase 2, oktober en november 2026<br>
+    Een traject van AI dichtbij, het AI-collectief voor publieke en maatschappelijke organisaties · begeleiding: Fedor Vriezen, Guus Witjes en Mathijs Harink
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

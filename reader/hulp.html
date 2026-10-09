@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Hulp en naslag · AI-workshops Diabetes Fonds</title>
+  <meta name="description" content="De werkwijzen uit de AI-workshops, voorbeeldprompts, leeromgevingen van Claude en Copilot en veelgestelde vragen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="cobrand" href="index.html" aria-label="Naar de startpagina">
+      <img class="topbar-logo" src="aidichtbij-logo.svg" alt="AI dichtbij">
+      <span class="voor">voor</span>
+      <img class="df-logo" src="diabetesfonds-logo.svg" alt="Diabetes Fonds">
+    </a>
+    <span class="topbar-meta">AI-workshops · oktober en november 2026</span>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </header>
+
+  <nav class="sidebar" id="sidebar" aria-label="Inhoud">
+    <div class="nav-group" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="index.html"><span class="nav-num"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></span><span class="nav-text"><span class="nav-kicker">Start</span><span class="nav-title">Home</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-home" aria-label="Start: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-home" hidden>
+        <a class="nav-link sub" href="index.html#overzicht"><span class="sub-num"></span><span>Zo loopt het</span></a>
+        <a class="nav-link sub" href="index.html#voorbereiding"><span class="sub-num"></span><span>Voor je start</span></a>
+        <a class="nav-link sub" href="index.html#onderdelen"><span class="sub-num"></span><span>Waar vind je wat</span></a>
+      </div>
+    </div>
+    <div class="nav-group" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="workshop-1.html"><span class="nav-num">1</span><span class="nav-text"><span class="nav-kicker">Workshop 1</span><span class="nav-title">Ervaren wat AI kan</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-w1" aria-label="Workshop 1: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-w1" hidden>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-1"><span class="sub-num">1</span><span>Het voorbeeld</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-1-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>1.1</span><span>Het veld</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-2"><span class="sub-num">2</span><span>Verschillende uitkomsten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-2-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.1</span><span>De drie uitkomsten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-2-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.2</span><span>Wat erachter zat</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-3"><span class="sub-num">3</span><span>Je eigen onboardingbot</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.1</span><span>De vijf ingrediënten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.2</span><span>Speel met de toon</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-3"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.3</span><span>Vastgelopen, of klaar?</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-4"><span class="sub-num">4</span><span>Kritisch kijken</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-4-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.1</span><span>De testkaart</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-5"><span class="sub-num">5</span><span>Zo kan het ook</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-5-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.1</span><span>Quiz en video</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-6"><span class="sub-num">6</span><span>Terug naar je eigen werk</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-6-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.1</span><span>De signalen</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-6-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.2</span><span>Dit kwam van jullie</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#tussendoor"><span class="sub-num">7</span><span>Tussen de workshops</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#bouwopdracht"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.1</span><span>Bouw één ding</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#werkblad"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.2</span><span>Het werkblad</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#spreekuur"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.3</span><span>Het spreekuur</span></a>
+      </div>
+    </div>
+    <div class="nav-group current" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="hulp.html" aria-current="page"><span class="nav-num">?</span><span class="nav-text"><span class="nav-kicker">Hulp</span><span class="nav-title">Naslag en tips</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-hulp" aria-label="Hulp: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-hulp" hidden>
+        <a class="nav-link sub" href="hulp.html#werkwijzen"><span class="sub-num"></span><span>De werkwijzen uit de training</span></a>
+        <a class="nav-link sub" href="hulp.html#instructie"><span class="sub-num"></span><span>Een goede instructie</span></a>
+        <a class="nav-link sub" href="hulp.html#prompts"><span class="sub-num"></span><span>Voorbeeldprompts</span></a>
+        <a class="nav-link sub" href="hulp.html#leren"><span class="sub-num"></span><span>Verder leren</span></a>
+        <a class="nav-link sub" href="hulp.html#vragen"><span class="sub-num"></span><span>Veelgestelde vragen</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section class="hero">
+      <span class="label-bar">Hulp en naslag</span>
+      <h1>Alles om zelf <span class="wave">verder</span> te gaan</h1>
+      <p class="hero-sub">De werkwijzen uit de twee workshops op een rij, voorbeeldprompts om mee te beginnen, links om verder te leren, en de vragen die vaak terugkomen.</p>
+    </section>
+
+    <section class="section" id="werkwijzen">
+      <div class="section-head">
+        <div class="badge soft">1</div>
+        <div>
+          <h2>De werkwijzen uit de <span class="wave">training</span></h2>
+          <p class="sub">Kort, om terug te lezen</p>
+        </div>
+      </div>
+      <div class="frameworks">
+        <div class="framework">
+          <h3>Drie knoppen: prompt, model, context</h3>
+          <p>Wat je vraagt, welk model je gebruikt, en wat je meegeeft. Aan alle drie kun je draaien. Ook wat de tool al van je weet, stuurt het antwoord mee: dat hoort bij context.</p>
+          <p class="from"><a href="workshop-1.html#w1-stap-2">Workshop 1, stap 2</a></p>
+        </div>
+        <div class="framework">
+          <h3>Vijf ingrediënten voor een instructie</h3>
+          <ol>
+            <li>Voor wie is het?</li>
+            <li>Wat moet er gebeuren?</li>
+            <li>Waarmee? Welk document of welke tekst.</li>
+            <li>Hoe ziet het resultaat eruit? Lengte, vorm, toon, en waar het vandaan komt.</li>
+            <li>Staat het er niet in? Zeg dat, en verzin niets.</li>
+          </ol>
+          <p class="from"><a href="workshop-1.html#w1-stap-3">Workshop 1, stap 3</a> · workshop 2, ronde 1</p>
+        </div>
+        <div class="framework">
+          <h3>Eén regel voor de toon</h3>
+          <p>Met één regel in je instructie bepaal jij hoe het antwoord klinkt. Feitelijk, als een collega die het uitlegt, of juist formeel. Dezelfde documenten, dezelfde vraag, een ander antwoord.</p>
+          <p class="from"><a href="workshop-1.html#w1-stap-3">Workshop 1, stap 3</a></p>
+        </div>
+        <div class="framework">
+          <h3>Zoek het op</h3>
+          <p>Wat AI maakt, controleer je zelf. Kies twee feitelijke uitspraken en zoek ze op in de bron. "Klopt" telt alleen als je de plek kunt aanwijzen. Test ook een vraag waarvan het antwoord er niet in staat.</p>
+          <p class="from"><a href="workshop-1.html#w1-stap-4">Workshop 1, stap 4</a></p>
+        </div>
+        <div class="framework">
+          <h3>Scherper maken: kies één zet</h3>
+          <ul>
+            <li>Geef een voorbeeld van hoe het eruit moet zien.</li>
+            <li>Voeg het document toe dat nog ontbrak.</li>
+            <li>Laat AI eerst drie vragen aan jou stellen.</li>
+          </ul>
+          <p class="from">Workshop 2, ronde 2</p>
+        </div>
+        <div class="framework">
+          <h3>Controleren: de menselijke toets</h3>
+          <ul>
+            <li>Beter, gelijk of slechter dan hoe je het nu doet?</li>
+            <li>Twee feitelijke uitspraken opgezocht in de bron?</li>
+            <li>Hoeveel tijd kostte het, inclusief controleren?</li>
+            <li>Zou je het aan een collega sturen?</li>
+          </ul>
+          <p class="from">Workshop 2, ronde 3</p>
+        </div>
+        <div class="framework">
+          <h3>Een proces in stappen</h3>
+          <p>Knip je werk in stappen, van begin tot eind, en zet bij elke stap: handwerk, een sjabloon, of AI. Het meeste blijft handwerk, en dat is prima. Je zoekt de stappen waar AI zijn plek verdient.</p>
+          <p class="from">Workshop 2, stap 2</p>
+        </div>
+        <div class="framework">
+          <h3>Waar zit het in jouw werk?</h3>
+          <p>Let op situaties waarin je veel informatie verwerkt, analyseert of vergelijkt, steeds hetzelfde doet, voor een leeg vel zit, één inhoud voor verschillende doelgroepen maakt, iemand zoekt die kritisch meedenkt, informatie omzet naar een andere vorm, of lang bezig bent met voorbereiden.</p>
+          <p>En andersom: AI kost energie en water. Gebruik het alleen waar het duidelijke meerwaarde biedt.</p>
+          <p class="from"><a href="workshop-1.html#w1-stap-6">Workshop 1, stap 6</a></p>
+        </div>
+        <div class="framework">
+          <h3>Van kans naar experiment</h3>
+          <p><strong>Wij denken dat AI bij</strong> [taak] <strong>kan helpen om</strong> [waarde] <strong>te bereiken. We testen dat door</strong> [experiment].</p>
+          <p>Schrijf op wanneer het goed genoeg is voordat je de uitkomst ziet. En maak het klein: past een eerste poging in vijftien minuten?</p>
+          <p class="from">Workshop 2, stap 4</p>
+        </div>
+        <div class="framework">
+          <h3>Van één keer naar elke keer</h3>
+          <p>Werkt een opdracht? Maak er iets van dat je niet opnieuw hoeft te typen. In Copilot sla je de prompt op of maak je een agent. In Claude zet je hem in een project, met het document dat je elke keer nodig hebt. Test hem daarna met een tweede voorbeeld.</p>
+          <p class="from">Workshop 2, snel klaar</p>
+        </div>
+      </div>
+      <div class="rule-box" style="margin-top:1.5rem">
+        <h4>De spelregel, voor alles hierboven</h4>
+        <p style="margin-bottom:0">Geen persoonsgegevens, geen donateursgegevens, geen gezondheidsgegevens, niets vertrouwelijks. Twijfel je, laat het eruit. Wat AI maakt, controleer je zelf.</p>
+      </div>
+    </section>
+
+    <section class="section" id="instructie">
+      <div class="section-head">
+        <div class="badge soft">2</div>
+        <div>
+          <h2>Een goede <span class="wave">instructie</span></h2>
+          <p class="sub">Voor een project in Claude of een agent in Copilot</p>
+        </div>
+      </div>
+
+            <p>De vijf ingrediënten zijn de basis. Deze tips komen terug in alles wat we over bots bouwen weten.</p>
+
+            <h4>Tien tips</h4>
+            <ol>
+              <li><strong>Eén bot, één taak.</strong> Hoe smaller de taak, hoe beter hij het doet. Wil hij twee dingen, bouw dan twee bots.</li>
+              <li><strong>Schrijf het als een briefing voor een nieuwe collega.</strong> Concreet in plaats van vaag: niet "wees behulpzaam", maar "noem bij elk antwoord het document waar het staat".</li>
+              <li><strong>Zeg wie hij is en voor wie hij werkt.</strong> "Je helpt nieuwe collega's van het Diabetes Fonds in hun eerste week" werkt beter dan "je bent een behulpzame assistent".</li>
+              <li><strong>Beschrijf hoe hij werkt, in stappen.</strong> En zeg waar hij eerst moet doorvragen in plaats van gokken.</li>
+              <li><strong>Zeg hoe het antwoord eruitziet.</strong> Vorm, lengte en toon. Een voorbeeld zegt meer dan een omschrijving: "schrijf niet zo, maar zo".</li>
+              <li><strong>Zeg wat hij doet als hij iets niet weet.</strong> Zeggen dat het er niet in staat, en niet gokken. Het is de kortste regel met het meeste effect.</li>
+              <li><strong>Zeg ook wat hij niet doet, en wat hij dan antwoordt.</strong> Een bot zegt uit zichzelf overal ja op. Schrijf daarnaast op wat wél moet: alleen verboden werkt niet.</li>
+              <li><strong>Houd de instructie kort en zet de kennis in de documenten.</strong> Rond de 150 tot 300 woorden is genoeg. Noem de documenten bij naam en zeg wanneer hij welk document gebruikt, maar kopieer de inhoud niet in de instructie.</li>
+              <li><strong>Voorkom regels die elkaar tegenspreken.</strong> Dan weet de bot niet welke hij moet volgen, en krijg je wisselende antwoorden.</li>
+              <li><strong>Geef voorbeelden.</strong> Een goed antwoord, en liefst ook een slecht antwoord met wat eraan mist. Daar leert de bot meer van dan van een alinea uitleg.</li>
+            </ol>
+
+            <h4>Een opbouw die werkt</h4>
+            <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>WIE JE BENT
+[rol, in één of twee zinnen]
+
+VOOR WIE JE WERKT
+[wie gebruikt je, en wat weet die al]
+
+WAT JE DOET
+Als de gebruiker [soort vraag of input] geeft,
+dan [wat je doet] en lever je [soort antwoord].
+
+HOE JE WERKT
+1. [stap]
+2. [stap]
+Altijd: [regel]
+Nooit: [regel], en zeg dan: [wat je in plaats daarvan antwoordt]
+
+HOE JE ANTWOORD ERUITZIET
+[vorm, lengte, toon, en waar het vandaan komt]
+
+ALS HET ER NIET IN STAAT
+[zeg dat, verzin niets, en verwijs naar ...]
+
+JE DOCUMENTEN
+[naam document]: gebruik je als [...]
+
+JE EERSTE VRAAG
+[hoe opent het gesprek]</pre></div>
+
+            <h4>Testen en bijschaven</h4>
+            <ul>
+              <li>Test met echte vragen. Stel ook een vraag waarvan het antwoord niet in de documenten staat, en een vraag die buiten zijn taak valt.</li>
+              <li>Kijk naar drie dingen: klopt de inhoud, werkt hij zoals je vroeg, en klopt de toon?</li>
+              <li>Pas één ding tegelijk aan en test opnieuw. De eerste versie is bijna nooit af.</li>
+              <li>Zoek eerst waar het probleem zit: in de instructie, in de documenten, of in je vraag. Klopt een feit niet, kijk dan eerst naar de documenten.</li>
+            </ul>
+
+            <h4>Als het niet goed gaat</h4>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Wat je ziet</th><th>Wat je in de instructie zet</th></tr></thead>
+                <tbody>
+                  <tr><td>Te algemeen</td><td>Meer over voor wie en waarvoor, plus een voorbeeld van een goed antwoord</td></tr>
+                  <tr><td>Verkeerde toon</td><td>Een voorbeeld: "niet zo ..., maar zo ..."</td></tr>
+                  <tr><td>Te lang of te kort</td><td>Een lengte of vorm, bijvoorbeeld "maximaal vijf zinnen"</td></tr>
+                  <tr><td>Verzint dingen</td><td>"Gebruik alleen de documenten. Staat het er niet in, zeg dat."</td></tr>
+                  <tr><td>Te veel opties</td><td>"Geef één voorstel, geen lijst."</td></tr>
+                  <tr><td>Doet dingen die niet bij zijn taak horen</td><td>Een nooit-regel, plus wat hij dan wel zegt</td></tr>
+                  <tr><td>Vraagt niet door</td><td>"Vraag eerst naar ... voordat je antwoordt."</td></tr>
+                </tbody>
+              </table>
+            </div>
+    </section>
+
+    <section class="section" id="prompts">
+      <div class="section-head">
+        <div class="badge soft">3</div>
+        <div>
+          <h2>Voorbeeldprompts om mee te <span class="wave">beginnen</span></h2>
+          <p class="sub">Kopieer, vul in wat tussen [haken] staat, en pas aan</p>
+        </div>
+      </div>
+      <p class="lead">Elke prompt hieronder gebruikt de vijf ingrediënten. Ze komen uit de kansen die in de gesprekken met het Diabetes Fonds genoemd zijn. Zie ze als begin: het beste resultaat krijg je als je ze aanpast op je eigen werk.</p>
+      <div class="note"><strong>Let op</strong> Geen persoonsgegevens, donateurs- of gezondheidsgegevens, niets vertrouwelijks. Haal namen en persoonlijke gegevens weg voordat je iets plakt.</div>
+      <div class="prompt-card">
+        <h3>Een tekst scherper maken</h3>
+        <p class="when">Een persbericht, nieuwsbericht of webtekst die beter leesbaar moet.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Je bent eindredacteur bij het Diabetes Fonds.
+Hieronder staat een [soort tekst] voor [doelgroep].
+
+Maak de tekst scherper op structuur en leesbaarheid:
+- de belangrijkste boodschap in de eerste twee zinnen;
+- korte zinnen, gewone woorden, geen jargon;
+- verander niets aan de feiten en cijfers.
+
+Geef eerst de nieuwe tekst. Zet daaronder in drie punten wat je veranderd hebt en waarom.
+
+[plak hier de tekst]</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Een tekst checken op toon en huisstijl</h3>
+        <p class="when">Werkt het best als je de schrijfwijzer of huisstijlgids erbij zet.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Hieronder staan twee dingen: onze schrijfwijzer en een tekst.
+Controleer de tekst op de schrijfwijzer.
+
+Geef een lijst van de plekken waar de tekst afwijkt:
+wat er staat, wat de schrijfwijzer zegt, en een voorstel.
+Staat iets niet in de schrijfwijzer, zeg dat dan en ga niet gokken.
+
+SCHRIJFWIJZER:
+[plak of voeg toe]
+
+TEKST:
+[plak hier de tekst]</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Eén tekst, drie doelgroepen</h3>
+        <p class="when">Dezelfde inhoud voor verschillende lezers.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Hieronder staat een tekst over [onderwerp].
+Schrijf er drie versies van:
+1. voor [doelgroep 1], maximaal [aantal] woorden;
+2. voor [doelgroep 2], maximaal [aantal] woorden;
+3. voor [doelgroep 3], maximaal [aantal] woorden.
+
+Gebruik alleen de informatie uit de tekst. Voeg geen feiten toe.
+Zet boven elke versie in één zin wat je voor die lezer hebt aangepast.
+
+[plak hier de tekst]</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Notulen en actiepunten</h3>
+        <p class="when">Van je eigen aantekeningen naar een net verslag. Haal namen en persoonlijke details eerst weg.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Hieronder staan mijn aantekeningen van een overleg over [onderwerp].
+Maak er een kort verslag van:
+- per onderwerp twee of drie zinnen: wat besproken is en wat besloten is;
+- daaronder een lijst met actiepunten: wat, wie (de rol, geen naam), wanneer.
+
+Staat iets niet in de aantekeningen, vul het dan niet zelf in maar zet er [?] bij.
+
+[plak hier je aantekeningen]</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Een lastige mail tactvol formuleren</h3>
+        <p class="when">Als je de inhoud weet, maar de toon lastig vindt.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Ik moet een mail schrijven aan [rol van de ontvanger] over [onderwerp].
+Wat ik wil zeggen: [de boodschap in je eigen woorden].
+Wat de ontvanger waarschijnlijk vindt: [...].
+
+Schrijf een mail van maximaal [aantal] zinnen.
+Toon: vriendelijk en duidelijk, niet vaag. Geen excuses die ik niet bedoel.
+Stel me eerst twee vragen als je iets mist.</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Veelgestelde vragen uit een regeling</h3>
+        <p class="when">Van een beleidsstuk naar antwoorden die collega's snappen.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Hieronder staat de [naam regeling of beleidsdocument].
+Maak er tien veelgestelde vragen met antwoorden van, voor collega's die het document niet gelezen hebben.
+
+- antwoorden van maximaal drie zinnen, in gewone taal;
+- zet bij elk antwoord het artikel of de paragraaf waar het staat;
+- staat een antwoord niet in het document, neem die vraag dan niet op.
+
+[voeg het document toe]</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Een wetenschappelijk artikel voor een breed publiek</h3>
+        <p class="when">Laat gezondheidsinhoud die naar buiten gaat altijd eerst nakijken door een deskundige.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Hieronder staat een wetenschappelijk artikel.
+Schrijf een samenvatting voor [doelgroep, bijvoorbeeld mensen met diabetes type 2] van maximaal 250 woorden:
+- wat is onderzocht, en bij wie;
+- wat is de belangrijkste uitkomst;
+- wat betekent het (en wat nog niet).
+
+Gebruik alleen wat in het artikel staat. Geen adviezen die er niet in staan.
+Zet onderaan welke zinnen je het moeilijkst vond om eenvoudig te maken.
+
+[voeg het artikel toe]</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Een eerste versie van een MT-stuk</h3>
+        <p class="when">Van losse stukken naar een opzet met beslispunten.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Ik schrijf een stuk voor het MT over [onderwerp].
+Hieronder staan de stukken die ik heb.
+
+Maak een eerste versie op één pagina:
+- aanleiding (twee zinnen);
+- de keuze die voorligt, met de opties;
+- per optie de voor- en nadelen, alleen uit de stukken;
+- de beslispunten, als vragen die met ja of nee te beantwoorden zijn.
+
+Zet [?] waar informatie ontbreekt.
+
+[voeg de stukken toe]</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Laat AI eerst vragen stellen</h3>
+        <p class="when">Werkt bij bijna elke taak. Het is een van de zetten uit ronde 2.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Ik wil [wat je wilt maken] voor [voor wie].
+Stel me eerst drie vragen die je nodig hebt om dit goed te doen.
+Wacht op mijn antwoorden voordat je iets maakt.</pre></div>
+      </div>
+      <div class="prompt-card">
+        <h3>Iemand die kritisch meedenkt</h3>
+        <p class="when">Voor een plan, een tekst of een keuze waar je zelf al te lang naar kijkt.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Hieronder staat [mijn plan / mijn tekst / de keuze die ik wil maken].
+Denk kritisch mee:
+- wat zijn de drie zwakste punten;
+- welke vraag gaat [doelgroep of MT] als eerste stellen;
+- wat mis ik?
+
+Wees eerlijk en concreet. Geen complimenten vooraf.
+
+[plak hier je stuk]</pre></div>
+      </div>
+    </section>
+
+    <section class="section" id="leren">
+      <div class="section-head">
+        <div class="badge soft">4</div>
+        <div>
+          <h2>Verder <span class="wave">leren</span></h2>
+          <p class="sub">Gratis leeromgevingen en hulppagina's van de makers zelf</p>
+        </div>
+      </div>
+      <div class="links">
+        <div class="link-col">
+          <h3>Claude</h3>
+          <a class="lnk" href="https://academy.claude.com/courses" target="_blank" rel="noopener"><strong>Claude Academy <span class="lang">EN</span></strong><span>Gratis cursussen van Anthropic, in je eigen tempo. Begin met AI Fluency.</span></a>
+          <a class="lnk" href="https://support.claude.com/en/articles/9517075-what-are-projects" target="_blank" rel="noopener"><strong>Wat zijn projecten? <span class="lang">EN</span></strong><span>Hoe een project werkt, zoals je onboardingbot uit workshop 1.</span></a>
+          <a class="lnk" href="https://support.claude.com" target="_blank" rel="noopener"><strong>Claude Help Center <span class="lang">EN</span></strong><span>Antwoorden op vragen over het gebruik van Claude.</span></a>
+          <a class="lnk" href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener"><strong>Handleiding prompts schrijven <span class="lang">EN</span></strong><span>Uitgebreid en wat technischer, voor wie verder wil.</span></a>
+        </div>
+        <div class="link-col">
+          <h3>Microsoft Copilot</h3>
+          <a class="lnk" href="media/agent-maken-in-copilot.mp4" target="_blank" rel="noopener"><strong>Zo maak je een agent in Copilot <span class="lang">filmpje</span></strong><span>Stap voor stap, van AI dichtbij. Zonder geluid.</span></a>
+          <a class="lnk" href="https://support.microsoft.com/nl-nl/topic/meer-informatie-over-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5" target="_blank" rel="noopener"><strong>Aan de slag met prompts schrijven <span class="lang">NL</span></strong><span>De basis van een goede vraag aan Copilot.</span></a>
+          <a class="lnk" href="https://learn.microsoft.com/nl-nl/training/paths/craft-effective-prompts-copilot-microsoft-365/" target="_blank" rel="noopener"><strong>Slimmer werken met AI <span class="lang">NL</span></strong><span>Gratis leerpad op Microsoft Learn.</span></a>
+          <a class="lnk" href="https://learn.microsoft.com/nl-nl/microsoft-365/copilot/copilot-prompt-gallery" target="_blank" rel="noopener"><strong>De Promptgalerie <span class="lang">NL</span></strong><span>Kant-en-klare prompts van Microsoft, en je eigen prompts bewaren.</span></a>
+          <a class="lnk" href="https://learn.microsoft.com/nl-nl/microsoft-365-copilot/extensibility/copilot-studio-agent-builder" target="_blank" rel="noopener"><strong>Een agent maken <span class="lang">EN</span></strong><span>Hoe je in Copilot een eigen agent bouwt.</span></a>
+          <a class="lnk" href="https://support.microsoft.com/nl-nl/copilot" target="_blank" rel="noopener"><strong>Copilot hulp en leren <span class="lang">NL</span></strong><span>De hulppagina's van Microsoft over Copilot.</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vragen">
+      <div class="section-head">
+        <div class="badge soft">5</div>
+        <div>
+          <h2>Veelgestelde vragen</h2>
+          <p class="sub">Staat je vraag er niet bij? Tot 4 november kun je naar het spreekuur, daarna via <a href="mailto:hallo@ai-dichtbij.nl">hallo@ai-dichtbij.nl</a>.</p>
+        </div>
+      </div>
+
+      <details class="fold">
+        <summary>Werk ik in Claude of in Copilot?</summary>
+        <div class="fold-body"><p>Je werkt in de tool waarvoor je een login hebt gekregen. De opdrachten werken in allebei: in Claude maak je een project, in Copilot een agent. Waar het in de workshops om gaat: wat je vraagt, welk model je gebruikt, en wat je meegeeft.</p></div>
+      </details>
+      <details class="fold">
+        <summary>Wat mag ik in AI stoppen?</summary>
+        <div class="fold-body">
+          <p>In de workshop alles wat voor je klaarstaat. Daarna, met je eigen werk: geen persoonsgegevens, geen donateursgegevens, geen gezondheidsgegevens, niets vertrouwelijks.</p>
+          <p>Gaat het over HR, donateurs, gezondheid, persoonsgegevens of subsidiebesluiten, dan is het risico hoog. Schrijf zo'n kans wel op, maar bouw er niet mee. Twijfel je, laat het eruit.</p>
+          <p>Gebruik je AI voor medische of gezondheidsinhoud die naar buiten gaat? Laat die dan altijd eerst nakijken door een deskundige.</p>
+        </div>
+      </details>
+      <details class="fold">
+        <summary>Hoe weet ik of wat AI zegt klopt?</summary>
+        <div class="fold-body"><p>Zoek feitelijke antwoorden op in het brondocument. Het klopt pas als je de plek kunt aanwijzen. Vraag je bot daarom altijd om de bron erbij te zetten, en om te zeggen wanneer iets niet in de documenten staat.</p></div>
+      </details>
+      <details class="fold">
+        <summary>Ik heb tussen de workshops niets gebouwd. Kom ik dan toch?</summary>
+        <div class="fold-body"><p>Ja. Vertel in de opening wat je tegenhield, daar leren we net zoveel van. In workshop 2 bouw je dan alsnog, met hulp erbij.</p></div>
+      </details>
+      <details class="fold">
+        <summary>Hoe zit het met energie en milieu?</summary>
+        <div class="fold-body"><p>AI kost energie en water. Het AI-kader van het Diabetes Fonds zegt: we gebruiken AI alleen waar het duidelijke meerwaarde biedt. Een onboardingbot die elke nieuwe collega kan gebruiken: ja. Tien varianten van een mail die je zelf in twee minuten schrijft: waarschijnlijk niet.</p></div>
+      </details>
+      <details class="fold">
+        <summary>Wat gebeurt er met de kansen die we kiezen?</summary>
+        <div class="fold-body"><p>De dots in workshop 2 zijn geen besluit, maar een beeld per groep. Wij leggen de drie groepen naast elkaar en adviseren het MT over twee of drie kansen. Die werken we daarna uit met een kleine groep. Jij gaat intussen zelf verder met je eigen experiment en je eigen licentie.</p></div>
+      </details>
+      <details class="fold">
+        <summary>Hoeveel tijd kost het?</summary>
+        <div class="fold-body"><p>Twee workshops van twee uur. Daartussen ongeveer een half uur voor de bouwopdracht en het werkblad. Na workshop 2 voer je je experiment minstens twee keer uit in je gewone werk.</p></div>
+      </details>
+      <details class="fold">
+        <summary>Waar kan ik terecht met vragen?</summary>
+        <div class="fold-body"><p>Bij de twee digitale spreekuren: donderdag 22 oktober (groep A en B) en woensdag 4 november (iedereen), allebei van 13:30 tot 14:30. Teken in via <span class="ph">[link]</span>.</p></div>
+      </details>
+    </section>
+
+
+    <nav class="page-next" aria-label="Volgende pagina">
+      <a href="workshop-1.html"><small>Vorige</small><strong>Workshop 1: ervaren wat AI kan</strong></a>
+      <a class="next" href="index.html"><small>Volgende</small><strong>Terug naar home</strong></a>
+    </nav>
+
+  </main>
+
+  <footer>
+    <strong>AI-workshops voor het Diabetes Fonds</strong> · fase 2, oktober en november 2026<br>
+    Een traject van AI dichtbij, het AI-collectief voor publieke en maatschappelijke organisaties · begeleiding: Fedor Vriezen, Guus Witjes en Mathijs Harink
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

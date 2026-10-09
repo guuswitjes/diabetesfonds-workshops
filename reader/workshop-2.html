@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Workshop 2 · AI-workshops Diabetes Fonds</title>
+  <meta name="description" content="Workshop 2: van kans naar experiment. De stappen, de kaarten en de opdracht voor de weken daarna.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="cobrand" href="index.html" aria-label="Naar de startpagina">
+      <img class="topbar-logo" src="aidichtbij-logo.svg" alt="AI dichtbij">
+      <span class="voor">voor</span>
+      <img class="df-logo" src="diabetesfonds-logo.svg" alt="Diabetes Fonds">
+    </a>
+    <span class="topbar-meta">AI-workshops · oktober en november 2026</span>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </header>
+
+  <nav class="sidebar" id="sidebar" aria-label="Inhoud">
+    <div class="nav-group" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="index.html"><span class="nav-num"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></span><span class="nav-text"><span class="nav-kicker">Start</span><span class="nav-title">Home</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-home" aria-label="Start: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-home" hidden>
+        <a class="nav-link sub" href="index.html#overzicht"><span class="sub-num"></span><span>Zo loopt het</span></a>
+        <a class="nav-link sub" href="index.html#voorbereiding"><span class="sub-num"></span><span>Voor je start</span></a>
+        <a class="nav-link sub" href="index.html#onderdelen"><span class="sub-num"></span><span>Waar vind je wat</span></a>
+      </div>
+    </div>
+    <div class="nav-group" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="workshop-1.html"><span class="nav-num">1</span><span class="nav-text"><span class="nav-kicker">Workshop 1</span><span class="nav-title">Ervaren wat AI kan</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-w1" aria-label="Workshop 1: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-w1" hidden>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-1"><span class="sub-num">1</span><span>Het voorbeeld</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-1-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>1.1</span><span>Het veld</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-2"><span class="sub-num">2</span><span>Verschillende uitkomsten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-2-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.1</span><span>De drie uitkomsten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-2-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.2</span><span>Wat erachter zat</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-3"><span class="sub-num">3</span><span>Je eigen onboardingbot</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.1</span><span>De vijf ingrediënten</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.2</span><span>Speel met de toon</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-3-3"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.3</span><span>Vastgelopen, of klaar?</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-4"><span class="sub-num">4</span><span>Kritisch kijken</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-4-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.1</span><span>De testkaart</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-5"><span class="sub-num">5</span><span>Zo kan het ook</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-5-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.1</span><span>Quiz en video</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#w1-stap-6"><span class="sub-num">6</span><span>Terug naar je eigen werk</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#w1-6-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.1</span><span>De signalen</span></a>
+        <a class="nav-link sub chap" href="workshop-1.html#tussendoor"><span class="sub-num">7</span><span>Tussen de workshops</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#bouwopdracht"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.1</span><span>Bouw één ding</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#werkblad"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.2</span><span>Het werkblad</span></a>
+        <a class="nav-link sub rd" href="workshop-1.html#spreekuur"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.3</span><span>Het spreekuur</span></a>
+      </div>
+    </div>
+    <div class="nav-group current" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="workshop-2.html" aria-current="page"><span class="nav-num">2</span><span class="nav-text"><span class="nav-kicker">Workshop 2</span><span class="nav-title">Van kans naar experiment</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-w2" aria-label="Workshop 2: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-w2" hidden>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-opening"><span class="sub-num">1</span><span>Wat heb je gemaakt?</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-1-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>1.1</span><span>Laat zien wat je maakte</span></a>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-voorbeeld"><span class="sub-num">2</span><span>Waar past AI?</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-2-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.1</span><span>Een proces in stappen</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-2-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.2</span><span>Ideeën verzamelen</span></a>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-kansen"><span class="sub-num">3</span><span>Kansen aanscherpen</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-3-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.1</span><span>De vragen van het trio</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-3-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.2</span><span>Geen eigen kans?</span></a>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-kiezen"><span class="sub-num">4</span><span>Maak het concreet</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-4-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.1</span><span>De experimentkaart</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-4-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.2</span><span>Maak het klein</span></a>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-atelier"><span class="sub-num">5</span><span>Drie rondes</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-5-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.1</span><span>Ronde 1, eerste poging</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-5-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.2</span><span>Ronde 2, scherper maken</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-5-3"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.3</span><span>Ronde 3, controleren</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-5-4"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.4</span><span>Snel klaar?</span></a>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-peercheck"><span class="sub-num">6</span><span>Peercheck</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-6-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.1</span><span>Vier zinnen, drie vragen</span></a>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-dots"><span class="sub-num">7</span><span>Kansen kiezen</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-7-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.1</span><span>De criteria en de dots</span></a>
+        <a class="nav-link sub chap" href="workshop-2.html#w2-praktijk"><span class="sub-num">8</span><span>De komende weken</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-8-1"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>8.1</span><span>De twee doelen</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-8-2"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>8.2</span><span>De opdracht</span></a>
+        <a class="nav-link sub rd" href="workshop-2.html#w2-8-3"><span class="rd-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>8.3</span><span>Vragen</span></a>
+      </div>
+    </div>
+    <div class="nav-group" data-group>
+      <div class="nav-main">
+        <a class="nav-link head" href="hulp.html"><span class="nav-num">?</span><span class="nav-text"><span class="nav-kicker">Hulp</span><span class="nav-title">Naslag en tips</span></span></a>
+        <button class="nav-caret" type="button" aria-expanded="false" aria-controls="nav-hulp" aria-label="Hulp: onderdelen tonen of verbergen"></button>
+      </div>
+      <div class="nav-sub" id="nav-hulp" hidden>
+        <a class="nav-link sub" href="hulp.html#werkwijzen"><span class="sub-num"></span><span>De werkwijzen uit de training</span></a>
+        <a class="nav-link sub" href="hulp.html#instructie"><span class="sub-num"></span><span>Een goede instructie</span></a>
+        <a class="nav-link sub" href="hulp.html#prompts"><span class="sub-num"></span><span>Voorbeeldprompts</span></a>
+        <a class="nav-link sub" href="hulp.html#leren"><span class="sub-num"></span><span>Verder leren</span></a>
+        <a class="nav-link sub" href="hulp.html#vragen"><span class="sub-num"></span><span>Veelgestelde vragen</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="hero-top">
+        <span class="label-bar">Workshop 2 · twee uur</span>
+        <a class="slides-btn" href="slides-2.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg>Bekijk de slides</a>
+      </div>
+      <h1>Van kans naar <span class="wave">experiment</span></h1>
+      <p class="hero-sub">Na twee uur heb je één experiment dat je al één keer gedaan hebt. Een kaart waarop staat wat je test en hoe je weet of het werkt. Een opdracht voor de komende weken. En je hebt meegedacht over waar AI voor het Diabetes Fonds de meeste waarde heeft.</p>
+      <p class="reader-hint"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>1.1</span> Zie je dit op een slide, dan staat het hier onder dat nummer. In het menu klik je er direct naartoe.</p>
+      <p class="groups-line">Groep A: donderdag 5 november, 8:45 tot 10:45 · Groep B: dinsdag 10 november, 13:30 tot 15:30 · Groep C: woensdag 11 november, 13:30 tot 15:30</p>
+    </section>
+
+    <section class="section" id="workshop-2">
+
+      <p><strong>Neem mee:</strong> je laptop, je telefoon, wat je gebouwd hebt, je werkblad, en het materiaal dat je voor je situatie nodig hebt.</p>
+
+      <div class="step" id="w2-opening">
+        <div class="step-head"><h3>Stap 1 · Wat heb je gemaakt?</h3><span class="step-time">15 minuten</span></div>
+        <div class="rmark" id="w2-1-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>1.1</span><span>Laat zien wat je maakte</span></div>
+        <p>In de groep, om de beurt, twee minuten per persoon: laat zien wat je gemaakt hebt. Wat heb je gemaakt, en hoe? Waar ben je blij mee, en waar liep je vast? Iets op je laptop? Zet het op het scherm. De groep vraagt door: hoe deed je dat? Wat zou je de volgende keer anders doen? Een van ons schrijft mee op een flip-over: waar liep je vast, en wat hielp?</p>
+        <p>Het hoeft niet af te zijn: juist door het te gebruiken zie je wat er nog aan moet. Niks gebouwd? Vertel wat je tegenhield.</p>
+      </div>
+
+      <div class="step" id="w2-voorbeeld">
+        <div class="step-head"><h3>Stap 2 · Waar past AI?</h3><span class="step-time">11 minuten</span></div>
+        <div class="rmark" id="w2-2-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.1</span><span>Een proces in stappen</span></div>
+        <p>Eerst een manier van kijken: knip een proces in stappen, en zoek de stappen waar AI zijn plek verdient. In ons voorbeeld, een podcast maken, zetten we AI in bij gasten zoeken, transcriberen en het transcript omzetten naar tekst, de achtergrond van een foto weghalen, visuals, een samenvatting voor de website, een kort fragment en vindbaar maken. Voor de uitnodiging, de titel en de posts is een sjabloon genoeg: niet alles hoeft AI te zijn. Opnemen, gasten ontvangen, uploaden, plannen en reageren op reacties blijft handwerk: meer dan de helft van de stappen.</p>
+        <p>Ook deze workshop is een proces: ophalen wat je bouwde, ideeën verzamelen, aanscherpen, aan de slag, kiezen. Bijna alles doen we met gesprek, flip-over en post-its. Bij één stap zetten we AI in: ideeën ordenen. Tijdens het werken maken wij een foto van jullie post-its en laten AI ze ordenen: wat hoort bij elkaar, wat is dubbel. In stap 7 zie je wat eruit komt. De slides en deze omgeving zijn ook met AI gemaakt, maar dat is de voorbereiding: een ander proces.</p>
+        <div class="rmark" id="w2-2-2"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>2.2</span><span>Ideeën verzamelen</span></div>
+        <p>Dan jij. Pak een proces uit je eigen werk, of een situatie van je werkblad. Bij welke stap kan AI helpen? Schrijf elk idee op een post-it, één zin per idee, en plak hem op het vel. Geen namen, en geen persoons-, donateurs- of gezondheidsgegevens.</p>
+      </div>
+
+      <div class="step" id="w2-kansen">
+        <div class="step-head"><h3>Stap 3 · Kansen aanscherpen</h3><span class="step-time">10 minuten</span></div>
+        <div class="rmark" id="w2-3-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.1</span><span>De vragen van het trio</span></div>
+        <p>In groepjes van drie. Iedereen kiest één idee, van het vel of van het eigen werkblad, en legt dat voor. Drie minuten per persoon, de vragen inbegrepen. De andere twee vragen:</p>
+        <ul>
+          <li>Herken ik dit?</li>
+          <li>Waar zit eigenlijk het grootste probleem?</li>
+          <li>Kan AI hier op een andere manier helpen dan je denkt?</li>
+          <li>Raakt dit een groter proces, of doet iemand anders iets vergelijkbaars?</li>
+        </ul>
+        <p>Op je werkblad staat wat er anders is als het helemaal zou werken. De laatste vraag: <strong>welk stukje daarvan kun je vandaag doen?</strong></p>
+        <div class="note">
+          <strong>Vraagt je kans om een koppeling met een systeem?</strong>
+          Bijvoorbeeld Salesforce of AFAS. Dan schrijven we hem op als kans voor later. Vandaag doe je het stuk dat kan met documenten die je zelf meegeeft.
+        </div>
+        <details class="fold reserve" id="w2-3-2">
+          <summary><span class="sum-text"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.2</span>Geen eigen kans? <span class="hint">kies er een uit de interviews</span></span></summary>
+          <div class="fold-body">
+            <p>Allemaal genoemd in de gesprekken van fase 1, allemaal laag risico, en allemaal te doen met documenten die je zelf meegeeft.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Groep</th><th>Kansen</th></tr></thead>
+                <tbody>
+                  <tr><td>Marketing, communicatie en fondsenwerving</td><td>een persbericht of tekst scherper maken op structuur en leesbaarheid; een tekst controleren op toon en huisstijl; varianten van één tekst voor verschillende doelgroepen; een campagnebriefing uit bestaande stukken</td></tr>
+                  <tr><td>Ondersteunende diensten</td><td>notulen en actiepunten uit aantekeningen (zonder persoonsgegevens); een lastige mail tactvol formuleren; veelgestelde vragen uit een regeling of beleidsdocument halen; de planning en prioriteiten van een week ordenen</td></tr>
+                  <tr><td>Kennis, onderzoek en inhoud</td><td>een wetenschappelijk artikel samenvatten voor een breed publiek; RvT-Highlights uit input van collega's; een korte samenvatting van een paar nieuwsbronnen; een eerste versie van een MT-stuk met beslispunten</td></tr>
+                  <tr><td>Iedereen</td><td>de onboardingbot uit workshop 1, aangepast voor je eigen team</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="step" id="w2-kiezen">
+        <div class="step-head"><h3>Stap 4 · Maak het concreet</h3><span class="step-time">8 minuten</span></div>
+        <div class="rmark" id="w2-4-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.1</span><span>De experimentkaart</span></div>
+        <p>Werk het stukje uit het trio uit, alleen of samen met een collega. Heb je al iets gebouwd, dan is dat meestal je experiment. Vul de experimentkaart in:</p>
+        <div class="sentence"><strong>Wij denken dat AI bij</strong> [taak] <strong>kan helpen om</strong> [waarde] <strong>te bereiken. We testen dat door</strong> [experiment].</div>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th style="width:42%">Het stukje dat ik vandaag doe (uit het trio)</th><td></td></tr>
+              <tr><th>Wat doe ik nu, en hoe lang duurt het?</th><td></td></tr>
+              <tr><th>Tool</th><td>Copilot / Claude</td></tr>
+              <tr><th>Welke informatie gaat erin?</th><td>openbaar / intern. Geen vertrouwelijke gegevens, persoonsgegevens, donateursgegevens of gezondheidsgegevens</td></tr>
+              <tr><th>Risiconiveau</th><td>laag / middel</td></tr>
+              <tr><th>Hoe controleer ik de uitkomst? Wie kijkt mee bij middel risico?</th><td></td></tr>
+              <tr><th>Wanneer is het goed genoeg? (tijd, kwaliteit, bruikbaarheid)</th><td><span style="color:var(--muted)">schrijf dit op voordat je de uitkomst ziet</span></td></tr>
+              <tr><th>Van wie is het experiment?</th><td>ik / wij: <span class="ph">[namen]</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Liever geïnterviewd worden?</strong> Plak deze prompt in Claude of Copilot. De AI stelt je de vragen één voor één en geeft aan het eind je kaart. Papier of scherm, allebei mag.</p>
+        <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Je bent mijn sparringpartner. Ik wil een klein experiment met AI doen in
+mijn werk bij het Diabetes Fonds. Help me een experimentkaart in te vullen
+door mij te interviewen.
+
+Zo werk je:
+- Stel één vraag tegelijk en wacht op mijn antwoord.
+- Is mijn antwoord vaag, vraag dan door. Is het te groot, help me het
+  kleiner te maken.
+- Vul niets in wat ik niet gezegd heb. Weet ik iets niet, schrijf dan
+  "nog uitzoeken".
+- Beslis niet of iets mag. Gaat het om persoonsgegevens, donateursgegevens
+  of gezondheidsgegevens, zeg dan dat dat niet in dit experiment past.
+
+Deze vragen komen aan bod:
+1. Welk stukje van je werk wil je vandaag met AI doen?
+2. Hoe doe je dat nu, en hoe lang duurt het?
+3. Wat moet het opleveren: tijd, kwaliteit, of iets anders?
+4. Werk je in Claude of in Copilot?
+5. Welke informatie gaat erin? Is dat openbaar of intern?
+6. Welk risiconiveau geef je het volgens jullie AI-kader: laag of middel?
+7. Hoe controleer je de uitkomst? Wie kijkt mee bij middel risico?
+8. Wanneer is het goed genoeg? Help me dit concreet te maken, voordat ik
+   begin.
+9. Doe je het alleen of samen?
+
+Past een eerste poging niet in één ronde van vijftien minuten? Help me het kleiner te maken.
+
+Als alles beantwoord is, geef je de kaart in deze vorm, en verder niets:
+
+Wij denken dat AI bij [taak] kan helpen om [waarde] te bereiken.
+We testen dat door [experiment].
+Het stukje dat ik vandaag doe:
+Wat ik nu doe, en hoe lang het duurt:
+Tool:
+Welke informatie gaat erin:
+Risiconiveau:
+Hoe ik de uitkomst controleer:
+Wanneer het goed genoeg is:
+Van wie:
+
+Begin met vraag 1.</pre></div>
+        <div class="rmark" id="w2-4-2"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.2</span><span>Maak het klein</span></div>
+        <p>Past een eerste poging in één ronde van vijftien minuten? Zo niet, knip het op en neem het eerste stuk.</p>      </div>
+
+      <div class="step" id="w2-atelier">
+        <div class="step-head"><h3>Stap 5 · Aan de slag in drie rondes</h3><span class="step-time">45 minuten</span></div>
+        <p>Drie rondes van vijftien minuten, in Claude of in Copilot. Twijfel je welke? Pak de tool waarin je thuis bouwde. Heb je thuis al iets gebouwd? Ga verder waar je vastliep.</p>
+        <div class="rounds">
+          <div class="round" id="w2-5-1">
+            <h4><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.1</span>Ronde 1, eerste poging</h4>
+            <p>Schrijf eerst, plak daarna. Dezelfde vijf ingrediënten als bij de onboardingbot:</p>
+            <ol class="ingredients">
+              <li><div><span class="q">Voor wie is het?</span><span class="a">jijzelf, een collega, een doelgroep</span></div></li>
+              <li><div><span class="q">Wat moet er gebeuren?</span><span class="a">de taak, in één of twee zinnen</span></div></li>
+              <li><div><span class="q">Waarmee?</span><span class="a">het document of de tekst die erbij hoort</span></div></li>
+              <li><div><span class="q">Hoe ziet het resultaat eruit?</span><span class="a">lengte, vorm, toon, en waar het vandaan komt</span></div></li>
+              <li><div><span class="q">Staat het er niet in?</span><span class="a">zeg dat, en verzin niets</span></div></li>
+            </ol>
+          </div>
+          <div class="round" id="w2-5-2">
+            <h4><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.2</span>Ronde 2, scherper maken</h4>
+            <p>Kies één zet:</p>
+            <ul>
+              <li>geef een voorbeeld van hoe het eruit moet zien;</li>
+              <li>voeg het document toe dat nog ontbrak;</li>
+              <li>vraag AI om eerst drie vragen aan jou te stellen voordat het iets maakt.</li>
+            </ul>
+          </div>
+          <div class="round" id="w2-5-3">
+            <h4><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.3</span>Ronde 3, controleren</h4>
+            <ul>
+              <li>Is het beter, gelijk of slechter dan hoe je het nu doet?</li>
+              <li>Zoek twee feitelijke uitspraken op in de bron.</li>
+              <li>Hoeveel tijd kostte het, inclusief controleren?</li>
+              <li>Zou je dit aan een collega sturen? Wat moet er dan nog aan gebeuren?</li>
+            </ul>
+          </div>
+        </div>
+        <p>Blijkt dat AI hier niet helpt? Dat is ook een uitkomst.</p>
+        <details class="fold" id="w2-5-4">
+          <summary><span class="sum-text"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.4</span>Snel klaar? <span class="hint">van één keer naar elke keer</span></span></summary>
+          <div class="fold-body">
+            <p>Je hebt nu een opdracht die werkt. Maak er iets van dat je de volgende keer niet opnieuw hoeft te typen:</p>
+            <ul>
+              <li><strong>Copilot:</strong> sla de prompt op, zodat je hem met één klik terughaalt.</li>
+              <li><strong>Claude:</strong> staat je opdracht nog niet in een project? Doe wat je in workshop 1 met de onboardingbot deed: een project, je opdracht bij de instructies, en het document dat je elke keer nodig hebt erbij.</li>
+            </ul>
+            <p>Test hem daarna met een tweede, ander voorbeeld. Werkt hij nog?</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="step" id="w2-peercheck">
+        <div class="step-head"><h3>Stap 6 · Peercheck</h3><span class="step-time">8 minuten</span></div>
+        <div class="rmark" id="w2-6-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>6.1</span><span>Vier zinnen, drie vragen</span></div>
+        <p>Met een of twee voorbeelden, met de hele groep. Wie zijn experiment laat bevragen, vertelt in vier zinnen:</p>
+        <ul>
+          <li>dit wilde ik proberen;</li>
+          <li>dit kwam eruit;</li>
+          <li>hier liep ik vast;</li>
+          <li>dit ga ik de komende weken testen.</li>
+        </ul>
+        <p>De groep vraagt: Is dit concreet genoeg? Kun je dit echt testen? Kun je straks beoordelen of het iets oplevert? Daarna stel je die drie vragen aan je eigen kaart, en maak je hem nog één keer scherper.</p>
+      </div>
+
+      <div class="step" id="w2-dots">
+        <div class="step-head"><h3>Stap 7 · Kansen kiezen</h3><span class="step-time">8 minuten</span></div>
+        <p>De post-its van <a href="#w2-2-2">stap 2</a> hangen in groepen, zoals AI ze geordend heeft. Klopt het? Mist er iets? Zo zien we samen waar de meeste waarde zit. We doen dit bij alle drie de groepen, en daarna maken wij er een advies van voor het MT.</p>
+        <div class="rmark" id="w2-7-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.1</span><span>De criteria en de dots</span></div>
+        <div class="criteria">
+          <div class="criterion">Komt vaak voor, wekelijks of vaker</div>
+          <div class="criterion">Meer mensen of teams hebben er iets aan</div>
+          <div class="criterion">Kan met informatie die je zelf meegeeft, zonder koppeling aan een systeem</div>
+          <div class="criterion">Laag of middel risico volgens het kader</div>
+        </div>
+        <p><span class="dots"><span class="dot green"></span><span class="dot green"></span><span class="dot green"></span><span class="dot red"></span></span> Drie groene en één rode dot. Groen: hier zit waarde. Rood: hier twijfel ik. Niet op je eigen idee.</p>
+      </div>
+
+      <div class="step" id="w2-praktijk">
+        <div class="step-head"><h3>Stap 8 · De komende weken</h3><span class="step-time">tot 1 december</span></div>
+        <div class="rmark" id="w2-8-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>8.1</span><span>De twee doelen</span></div>
+        <div class="goals">
+          <div class="goal"><div class="who">Doel 1</div>Zelf leren doen: dat gaat vanaf nu verder, in je eigen werk en met je eigen licentie.</div>
+          <div class="goal"><div class="who">Doel 2</div>Zien waar AI de meeste waarde heeft: wij leggen de drie groepen naast elkaar, adviseren het MT over twee of drie kansen en werken die uit met een kleine groep.</div>
+        </div>
+        <div class="rmark" id="w2-8-2"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>8.2</span><span>De opdracht voor de komende weken</span></div>
+        <ul>
+          <li>Voer je experiment minstens twee keer uit in je gewone werk.</li>
+          <li>Scherp het tussendoor aan.</li>
+          <li>Bewaar één voorbeeld dat goed ging en één dat twijfel gaf.</li>
+          <li>Noteer per keer: hoeveel tijd, vergeleken met zonder AI; hoe goed het resultaat was; en of je het weer zo zou doen.</li>
+        </ul>
+        <p>Blijkt dat AI hier niet helpt, dan is dat ook een uitkomst. Dan weten we waar we niet in hoeven te investeren.</p>
+        <div class="rmark" id="w2-8-3"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>8.3</span><span>Vragen</span></div>
+        <div class="note">
+          Na workshop 2 is er geen spreekuur meer. Vragen stel je via <span class="ph">[kanaal]</span>. Wat je vindt, komt terug bij de afsluiting op 1 december.
+        </div>
+      </div>
+        </section>
+
+    <nav class="page-next" aria-label="Volgende pagina">
+      <a href="workshop-1.html"><small>Vorige</small><strong>Workshop 1: ervaren wat AI kan</strong></a>
+      <a class="next" href="hulp.html"><small>Volgende</small><strong>Hulp en naslag</strong></a>
+    </nav>
+
+  </main>
+
+  <footer>
+    <strong>AI-workshops voor het Diabetes Fonds</strong> · fase 2, oktober en november 2026<br>
+    Een traject van AI dichtbij, het AI-collectief voor publieke en maatschappelijke organisaties · begeleiding: Fedor Vriezen, Guus Witjes en Mathijs Harink
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
