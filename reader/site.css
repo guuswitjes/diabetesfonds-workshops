@@ -545,3 +545,6 @@ details.fold > summary .rnum, .step-head h3 .rnum { margin-right: 0.55rem; }
 .idea-card h4 { font-size: 0.98rem; margin: 0 0 0.4rem; }
 .idea-card ul { margin: 0; padding-left: 1.1rem; }
 .idea-card li { font-size: 0.9rem; margin: 0.2rem 0; }
+
+/* Screenshots in het klikpad */
+img.shot { display: block; max-width: 100%; height: auto; margin: 0.6rem 0 0.9rem; border: 1px solid var(--rule); border-radius: 6px; box-shadow: 0 1px 3px rgba(13, 27, 42, 0.08); }

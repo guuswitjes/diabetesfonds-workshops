@@ -272,7 +272,16 @@ Verzin niets.</pre></div>
 
       <div class="step" id="w1-stap-3">
         <div class="step-head"><h3>Stap 3 · Je eigen onboardingbot</h3><span class="step-time">30 minuten</span></div>
-        <p>In stap 2 werkte je in één chat. Nu bouw je een eigen bot: in Claude maak je een project, in Copilot een agent. Daarin upload je de documenten (niet koppelen aan je computer) en schrijf je één keer je instructie. Elke vraag die je daarna stelt, gebruikt die context. Nog nooit een agent in Copilot gemaakt? Dan <a href="media/agent-maken-in-copilot.mp4" target="_blank" rel="noopener">bekijk het filmpje</a>, zonder geluid. Een goede instructie heeft vijf ingrediënten:</p>
+        <p>In stap 2 werkte je in één chat. Nu bouw je een eigen bot: in Claude maak je een project, in Copilot een agent. Daarin upload je de documenten (niet koppelen aan je computer) en schrijf je één keer je instructie. Elke vraag die je daarna stelt, gebruikt die context. Nog nooit een agent in Copilot gemaakt? Dan <a href="media/agent-maken-in-copilot.mp4" target="_blank" rel="noopener">bekijk het filmpje</a>, zonder geluid.</p>
+        <h4>Zo maak je een project in Claude</h4>
+        <ol>
+          <li>Klik links in het menu op <strong>Projects</strong> (niet op "+ New", dat is een nieuwe chat). Zie je het menu niet? Klik linksboven op het icoontje om het uit te klappen.<img class="shot" src="media/project-1-projects.png" alt="Het menu van Claude met Projects gemarkeerd" width="403" loading="lazy"></li>
+          <li>Klik rechtsboven op <strong>New project</strong>, geef het een naam (bijvoorbeeld "Onboardingbot") en klik op <strong>Create project</strong>. De rest mag leeg blijven: je instructie komt zo bij Instructions.<img class="shot" src="media/project-2-new-project.png" alt="De knop New project gemarkeerd" width="303" loading="lazy"><img class="shot" src="media/project-3-create.png" alt="Het venster Create a project, met het naamveld en de knop Create project gemarkeerd" width="480" loading="lazy"></li>
+          <li>Rechts in het project staat <strong>Instructions</strong>: klik op <strong>Add</strong> en schrijf of plak daar je instructie.</li>
+          <li>Daaronder staat <strong>Context</strong>: klik op <strong>Add</strong> om de documenten toe te voegen.<img class="shot" src="media/project-4-instructions-context.png" alt="Instructions en Context in het project, allebei gemarkeerd" width="474" loading="lazy"></li>
+          <li>Stel je vraag in het invoerveld van het project. Elke nieuwe chat in dit project kent de documenten en je instructie.</li>
+        </ol>
+        <p>Een goede instructie heeft vijf ingrediënten:</p>
         <div class="rmark" id="w1-3-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>3.1</span><span>De vijf ingrediënten</span></div>
         <ol class="ingredients">
           <li><div><span class="q">Voor wie is hij?</span><span class="a">een nieuwe collega, eerste week</span></div></li>
@@ -281,7 +290,16 @@ Verzin niets.</pre></div>
           <li><div><span class="q">Hoe ziet het antwoord eruit?</span><span class="a">kort, gewone taal, eerst het antwoord, dan het document waar het staat</span></div></li>
           <li><div><span class="q">Staat het er niet in?</span><span class="a">zeg dat, en verzin niets</span></div></li>
         </ol>
-        <p>Zet de documenten erin, schrijf je instructie, en stel je bot twee vragen van de flip-over.</p>
+        <h4>Zo kan een instructie klinken</h4>
+        <p>Een voorbeeld van een andere bot: eentje die teksten checkt op de schrijfregels van het fonds. Elke vraag wordt één of twee zinnen.</p>
+        <ol class="ingredients">
+          <li><div><span class="q">Voor wie?</span><span class="a">Je helpt collega's die een tekst voor de website schrijven.</span></div></li>
+          <li><div><span class="q">Wat?</span><span class="a">Je checkt hun tekst op onze schrijfregels.</span></div></li>
+          <li><div><span class="q">Waarmee?</span><span class="a">Gebruik alleen het document met de schrijfregels.</span></div></li>
+          <li><div><span class="q">Hoe ziet het antwoord eruit?</span><span class="a">Per punt: wat niet klopt, welke regel, en een betere zin. Kort, in gewone taal.</span></div></li>
+          <li><div><span class="q">Staat het er niet in?</span><span class="a">Zeg het als iets niet in de schrijfregels staat, en verzin geen regel.</span></div></li>
+        </ol>
+        <p>Schrijf nu je eigen antwoorden, voor je onboardingbot. Zet de documenten erin, schrijf je instructie, en stel je bot twee vragen van de flip-over.</p>
 
         <a class="hulp-link" href="hulp.html#instructie"><div><strong>Meer weten: zo schrijf je een goede instructie</strong><br><span>Tien tips, een opbouw om te kopiëren, en wat je doet als het niet goed gaat. Op de hulppagina.</span></div></a>
 
