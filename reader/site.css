@@ -301,6 +301,20 @@ li { margin-bottom: 0.3rem; }
 .ingredients .q { font-weight: 600; display: block; }
 .ingredients .a { color: var(--ink-soft); font-size: 0.92rem; }
 
+/* Instructie-voorbeeld: vragen links, de getypte instructie als één tekst rechts */
+.instr-voorbeeld { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; column-gap: 1.2rem; margin: 0.9rem 0; }
+.instr-voorbeeld .iv-q { font-weight: 600; padding: 0.35rem 0; }
+.instr-voorbeeld .iv-a { background: var(--white); border-left: 1px solid var(--rule); border-right: 1px solid var(--rule); padding: 0.35rem 1.1rem; color: var(--ink-soft); }
+.instr-voorbeeld .iv-a:nth-child(2) { border-top: 1px solid var(--rule); border-radius: 8px 8px 0 0; padding-top: 0.9rem; }
+.instr-voorbeeld .iv-q:nth-child(1) { padding-top: 0.9rem; }
+.instr-voorbeeld .iv-a:last-child { border-bottom: 1px solid var(--rule); border-radius: 0 0 8px 8px; padding-bottom: 0.9rem; }
+@media (max-width: 640px) {
+  .instr-voorbeeld { grid-template-columns: 1fr; }
+  .instr-voorbeeld .iv-q { font-size: 0.82rem; color: var(--muted); padding: 0.6rem 0 0.15rem; }
+  .instr-voorbeeld .iv-a { border: 1px solid var(--rule); border-radius: 8px; padding: 0.6rem 1rem; }
+  .instr-voorbeeld .iv-a:nth-child(2), .instr-voorbeeld .iv-a:last-child { border-radius: 8px; padding: 0.6rem 1rem; }
+}
+
 /* Code / prompt blocks */
 .prompt {
   position: relative;
