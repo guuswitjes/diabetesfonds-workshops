@@ -117,3 +117,16 @@ document.addEventListener('click', function (e) {
   document.addEventListener('keydown', onKey);
   document.body.appendChild(box);
 });
+
+// Ingebouwde voorbeelden (quiz): het kader groeit mee met de inhoud. Lukt dat niet (lokaal geopend), dan blijft de vaste hoogte uit de css.
+document.querySelectorAll('iframe.voorbeeld-frame').forEach(function (frame) {
+  frame.addEventListener('load', function () {
+    try {
+      var doc = frame.contentDocument;
+      if (!doc || !doc.body) return;
+      var fit = function () { frame.style.height = Math.ceil(doc.body.getBoundingClientRect().height + 2) + 'px'; };
+      fit();
+      if (window.ResizeObserver) new ResizeObserver(fit).observe(doc.body);
+    } catch (e) {}
+  });
+});
