@@ -118,15 +118,38 @@ document.addEventListener('click', function (e) {
   document.body.appendChild(box);
 });
 
-// Ingebouwde voorbeelden (quiz): het kader groeit mee met de inhoud. Lukt dat niet (lokaal geopend), dan blijft de vaste hoogte uit de css.
-document.querySelectorAll('iframe.voorbeeld-frame').forEach(function (frame) {
-  frame.addEventListener('load', function () {
-    try {
-      var doc = frame.contentDocument;
-      if (!doc || !doc.body) return;
-      var fit = function () { frame.style.height = Math.ceil(doc.body.getBoundingClientRect().height + 2) + 'px'; };
-      fit();
-      if (window.ResizeObserver) new ResizeObserver(fit).observe(doc.body);
-    } catch (e) {}
-  });
+// Voorbeelden (quiz) openen in een pop-up op de pagina. Sluiten met het kruisje, Escape of een klik naast het venster.
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a.pop-open');
+  if (!link) return;
+  e.preventDefault();
+  var overlay = document.createElement('div');
+  overlay.className = 'pop-overlay';
+  var box = document.createElement('div');
+  box.className = 'pop-box';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-modal', 'true');
+  box.setAttribute('aria-label', link.getAttribute('data-pop-title') || '');
+  var btn = document.createElement('button');
+  btn.className = 'pop-close';
+  btn.type = 'button';
+  btn.setAttribute('aria-label', 'Sluiten');
+  btn.textContent = '×';
+  var frame = document.createElement('iframe');
+  frame.src = link.getAttribute('href');
+  frame.title = link.getAttribute('data-pop-title') || '';
+  box.appendChild(btn);
+  box.appendChild(frame);
+  overlay.appendChild(box);
+  var prev = document.body.style.overflow;
+  document.body.style.overflow = 'hidden';
+  function close() { overlay.remove(); document.body.style.overflow = prev; document.removeEventListener('keydown', onKey); window.removeEventListener('message', onMsg); link.focus(); }
+  function onKey(ev) { if (ev.key === 'Escape') close(); }
+  btn.addEventListener('click', close);
+  overlay.addEventListener('click', function (ev) { if (ev.target === overlay) close(); });
+  function onMsg(ev) { if (ev.source === frame.contentWindow && ev.data === 'pop-close') close(); }
+  window.addEventListener('message', onMsg);
+  document.addEventListener('keydown', onKey);
+  document.body.appendChild(overlay);
+  frame.addEventListener('load', function () { try { frame.contentWindow.focus(); } catch (err) {} });
 });

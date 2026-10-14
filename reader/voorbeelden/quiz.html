@@ -1,6 +1,39 @@
 <!doctype html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><style>html,body{margin:0;padding:0}</style></head><body>
 <title>Quiz nieuwe collega</title>
+<script>if (window.self !== window.top) { document.documentElement.classList.add("pop"); document.addEventListener("keydown", function (e) { if (e.key === "Escape") window.parent.postMessage("pop-close", "*"); }); }</script>
+<style>
+/* Pop-up in de reader: compact, zodat vraag plus uitleg op één scherm past */
+.pop body { font-size: clamp(14px, 1.5vw, 17px); line-height: 1.4; }
+.pop .wrap { padding-block: 14px; gap: 10px; }
+.pop .brandbar { padding-bottom: 8px; }
+.pop .df-logo { height: 34px; }
+.pop .aid-logo { height: 18px; }
+.pop .card { padding: 18px 24px; gap: 12px; }
+.pop h1 { font-size: 1.4em; }
+.pop .qgrid { grid-template-columns: minmax(0, 1fr) clamp(120px, 22%, 200px); gap: 20px; }
+.pop .qmain { gap: 12px; }
+.pop .options { gap: 8px; }
+.pop .opt { padding: 9px 16px; }
+.pop .feedback { padding: 10px 16px; gap: 3px; }
+.pop .quote { margin-top: 2px; font-size: .85em; }
+.pop .btn { padding: 9px 22px; }
+.pop .score { font-size: 3.2em; }
+.pop footer { font-size: .68em; }
+@media (max-width: 700px) { .pop .vis-wrap { display: none; } }
+@media (max-height: 680px) {
+  .pop .wrap { padding-block: 10px; gap: 8px; }
+  .pop .brandbar { padding-bottom: 6px; }
+  .pop .df-logo { height: 28px; }
+  .pop .card { padding: 14px 20px; gap: 10px; }
+  .pop h1 { font-size: 1.25em; }
+  .pop .opt { padding: 7px 14px; }
+  .pop .feedback { padding: 8px 14px; }
+  .pop .quote { display: none; }
+  .pop .track { display: none; }
+}
+</style>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Figtree:wght@400;600;700&display=swap">
