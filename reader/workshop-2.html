@@ -179,7 +179,7 @@
       <div class="step" id="w2-kiezen">
         <div class="step-head"><h3>Stap 4 · Maak het concreet</h3><span class="step-time">8 minuten</span></div>
         <div class="rmark" id="w2-4-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.1</span><span>De experimentkaart</span></div>
-        <p>Werk het stukje uit het trio uit, alleen of samen met een collega. Heb je al iets gebouwd, dan is dat meestal je experiment. Vul de experimentkaart in:</p>
+        <p>Je blijft in je trio, of in een duo. Ieder werkt het eigen stukje uit, de anderen kijken mee en vragen door. Heb je al iets gebouwd, dan is dat meestal je experiment. Vul de experimentkaart in:</p>
         <div class="sentence"><strong>Wij denken dat AI bij</strong> [taak] <strong>kan helpen om</strong> [waarde] <strong>te bereiken. We testen dat door</strong> [experiment].</div>
         <div class="table-wrap">
           <table>
@@ -187,7 +187,7 @@
               <tr><th style="width:42%">Het stukje dat ik vandaag doe (uit het trio)</th><td></td></tr>
               <tr><th>Wat doe ik nu, en hoe lang duurt het?</th><td></td></tr>
               <tr><th>Tool</th><td>Copilot / Claude</td></tr>
-              <tr><th>Welke informatie gaat erin?</th><td>openbaar / intern. Geen vertrouwelijke gegevens, persoonsgegevens, donateursgegevens of gezondheidsgegevens</td></tr>
+              <tr><th>Welke informatie gaat erin?</th><td>openbaar / intern. Geen vertrouwelijke gegevens, donateursgegevens of gezondheidsgegevens</td></tr>
               <tr><th>Risiconiveau</th><td>laag / middel</td></tr>
               <tr><th>Hoe controleer ik de uitkomst? Wie kijkt mee bij middel risico?</th><td></td></tr>
               <tr><th>Wanneer is het goed genoeg? (tijd, kwaliteit, bruikbaarheid)</th><td><span style="color:var(--muted)">schrijf dit op voordat je de uitkomst ziet</span></td></tr>
@@ -195,19 +195,22 @@
             </tbody>
           </table>
         </div>
-        <p><strong>Liever geïnterviewd worden?</strong> Plak deze prompt in Claude of Copilot. De AI stelt je de vragen één voor één en geeft aan het eind je kaart. Papier of scherm, allebei mag.</p>
+        <p><strong>Twee manieren.</strong> Bevraag elkaar: een stelt de vragen van de kaart, de ander antwoordt, dan wissel je. <strong>Of laat AI je interviewen.</strong> Plak deze prompt in Claude of Copilot. De AI stelt je de vragen één voor één, geeft je kaart, maakt er een processchema van en loopt de stappen met je door. Papier of scherm, allebei mag.</p>
         <div class="prompt"><button class="copy-btn" type="button">Kopieer</button><pre>Je bent mijn sparringpartner. Ik wil een klein experiment met AI doen in
-mijn werk bij het Diabetes Fonds. Help me een experimentkaart in te vullen
-door mij te interviewen.
+mijn werk bij het Diabetes Fonds. Je helpt me in drie fasen: eerst een
+experimentkaart, dan een processchema, dan uitvoeren en terugblikken.
 
-Zo werk je:
+Zo werk je, in alle fasen:
 - Stel één vraag tegelijk en wacht op mijn antwoord.
 - Is mijn antwoord vaag, vraag dan door. Is het te groot, help me het
   kleiner te maken.
 - Vul niets in wat ik niet gezegd heb. Weet ik iets niet, schrijf dan
-  "nog uitzoeken".
-- Beslis niet of iets mag. Gaat het om persoonsgegevens, donateursgegevens
-  of gezondheidsgegevens, zeg dan dat dat niet in dit experiment past.
+  "nog uitzoeken". Doe je zelf een voorstel, zeg dan dat het een voorstel
+  is en vraag of het klopt.
+- Beslis niet of iets mag. Gaat het om donateursgegevens of
+  gezondheidsgegevens, zeg dan dat dat niet in dit experiment past.
+
+FASE 1: EXPERIMENTKAART
 
 Deze vragen komen aan bod:
 1. Welk stukje van je werk wil je vandaag met AI doen?
@@ -220,10 +223,10 @@ Deze vragen komen aan bod:
 8. Wanneer is het goed genoeg? Help me dit concreet te maken, voordat ik
    begin.
 9. Doe je het alleen of samen?
+10. Past een eerste poging niet in één ronde van vijftien minuten? Help me
+    het kleiner te maken.
 
-Past een eerste poging niet in één ronde van vijftien minuten? Help me het kleiner te maken.
-
-Als alles beantwoord is, geef je de kaart in deze vorm, en verder niets:
+Als alles beantwoord is, geef je de kaart in deze vorm:
 
 Wij denken dat AI bij [taak] kan helpen om [waarde] te bereiken.
 We testen dat door [experiment].
@@ -236,13 +239,60 @@ Hoe ik de uitkomst controleer:
 Wanneer het goed genoeg is:
 Van wie:
 
+Vraag daarna: "Zullen we hier een processchema van maken?"
+
+FASE 2: PROCESSCHEMA
+
+Knip het experiment op in 4 tot 6 stappen, gebaseerd op mijn antwoorden.
+Geef per stap aan:
+- Wie: ik, AI, of samen
+- Wat: wat er in deze stap gebeurt
+- Tijd: in minuten
+- Resultaat: wat de stap oplevert
+
+Laat de stap "controleren" altijd door mij of samen doen, nooit door AI
+alleen.
+
+Toon het proces op twee manieren:
+1. Als schema. Kun je een visueel schema maken, doe dat dan, met een
+   kleur voor "ik", een kleur voor "AI" en een kleur voor "samen". Kan
+   dat niet, maak dan een tekstschema met pijlen, zoals:
+   [Stap 1, ik] → [Stap 2, AI] → [Stap 3, samen]
+2. Als tabel met de kolommen: Stap, Wie, Wat, Tijd, Resultaat.
+
+Geef aan welke stappen samen de ronde van vijftien minuten vormen.
+Vraag daarna: "Klopt dit schema, of wil je iets aanpassen?"
+
+FASE 3: UITVOEREN EN TERUGBLIKKEN
+
+Vraag: "Wil je de stappen nu met mij doorlopen?"
+Zo ja, begeleid me stap voor stap in dit gesprek. Zeg bij elke stap
+welke stap het is, wie hem doet en wat het resultaat moet zijn.
+- Is het een stap van mij: vertel kort wat ik moet doen en vraag wat je
+  van mij nodig hebt, één vraag tegelijk. Moet ik documenten aanleveren,
+  vraag me dan om ze toe te voegen of de tekst te plakken.
+- Is het een stap van AI: voer de stap zelf uit met wat ik gegeven heb.
+- Is het een stap van samen: doe een voorstel en vraag wat ik wil
+  aanpassen.
+Laat mij nooit een prompt met invulvelden zien. Ga pas door naar de
+volgende stap als ik zeg dat de stap klaar is.
+
+Na de laatste stap stel je deze drie vragen, één tegelijk:
+1. Is het resultaat goed genoeg volgens wat we op de kaart afspraken?
+2. Bij welke stap hielp AI het meest, en waar niet?
+3. Ga je door, pas je het aan, of stop je?
+
+Sluit af met een bijgewerkt schema: laat zien bij welke stap AI de
+volgende keer meer zou kunnen doen, en welke stap bij mij moet blijven.
+Markeer dit als voorstel.
+
 Begin met vraag 1.</pre></div>
         <div class="rmark" id="w2-4-2"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>4.2</span><span>Maak het klein</span></div>
         <p>Past een eerste poging in één ronde van vijftien minuten? Zo niet, knip het op en neem het eerste stuk.</p>      </div>
 
       <div class="step" id="w2-atelier">
         <div class="step-head"><h3>Stap 5 · Aan de slag in drie rondes</h3><span class="step-time">45 minuten</span></div>
-        <p>Drie rondes van vijftien minuten, in Claude of in Copilot. Twijfel je welke? Pak de tool waarin je thuis bouwde. Heb je thuis al iets gebouwd? Ga verder waar je vastliep.</p>
+        <p>Drie rondes van vijftien minuten, in je trio of duo. Ieder werkt aan het eigen experiment, de anderen kijken mee. Werk in Claude of in Copilot. Twijfel je welke? Pak de tool waarin je thuis bouwde. Heb je thuis al iets gebouwd? Ga verder waar je vastliep.</p>
         <div class="rounds">
           <div class="round" id="w2-5-1">
             <h4><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.1</span>Ronde 1, eerste poging</h4>
@@ -274,6 +324,7 @@ Begin met vraag 1.</pre></div>
             </ul>
           </div>
         </div>
+        <p><strong>Eerder klaar?</strong> De rondes zijn een richtlijn. Ga door naar de volgende ronde. Alle drie klaar? Pak een tweede proces of taak, of laat iemand uit je trio je experiment bevragen.</p>
         <p>Blijkt dat AI hier niet helpt? Dat is ook een uitkomst.</p>
         <details class="fold" id="w2-5-4">
           <summary><span class="sum-text"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>5.4</span>Snel klaar? <span class="hint">van één keer naar elke keer</span></span></summary>
@@ -306,12 +357,11 @@ Begin met vraag 1.</pre></div>
         <p>De post-its van <a href="#w2-2-2">stap 2</a> hangen in groepen, zoals AI ze geordend heeft. Klopt het? Mist er iets? Zo zien we samen waar de meeste waarde zit. We doen dit bij alle drie de groepen, en daarna maken wij er een advies van voor het MT.</p>
         <div class="rmark" id="w2-7-1"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>7.1</span><span>De criteria en de dots</span></div>
         <div class="criteria">
-          <div class="criterion">Komt vaak voor, wekelijks of vaker</div>
-          <div class="criterion">Meer mensen of teams hebben er iets aan</div>
-          <div class="criterion">Kan met informatie die je zelf meegeeft, zonder koppeling aan een systeem</div>
-          <div class="criterion">Laag of middel risico volgens het kader</div>
+          <div class="criterion">Levert het tijdswinst op?</div>
+          <div class="criterion">Kunnen we het uitrollen naar meer mensen?</div>
+          <div class="criterion">Is er een koppeling met een systeem nodig? Ja of nee.</div>
         </div>
-        <p><span class="dots"><span class="dot green"></span><span class="dot green"></span><span class="dot green"></span><span class="dot red"></span></span> Drie groene en één rode dot. Groen: hier zit waarde. Rood: hier twijfel ik. Niet op je eigen idee.</p>
+        <p><span class="dots"><span class="dot green"></span><span class="dot green"></span><span class="dot green"></span></span> Drie dots op de ideeën met de meeste waarde. Alle drie op één idee mag. Niet op je eigen idee.</p>
       </div>
 
       <div class="step" id="w2-praktijk">
@@ -331,7 +381,7 @@ Begin met vraag 1.</pre></div>
         <p>Blijkt dat AI hier niet helpt, dan is dat ook een uitkomst. Dan weten we waar we niet in hoeven te investeren.</p>
         <div class="rmark" id="w2-8-3"><span class="rnum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>8.3</span><span>Vragen</span></div>
         <div class="note">
-          Na workshop 2 is er geen spreekuur meer. Vragen stel je via <span class="ph">[kanaal]</span>. Wat je vindt, komt terug bij de afsluiting op 1 december.
+          Vragen stel je via <a href="mailto:hallo@aidichtbij.nl">hallo@aidichtbij.nl</a>. Wat je vindt, komt terug bij de afsluiting op 1 december.
         </div>
       </div>
         </section>
